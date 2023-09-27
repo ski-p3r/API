@@ -14,7 +14,7 @@ class ProductFilter(FilterSet):
 
     class Meta:
         model = Product
-        fields = ['min_price', 'max_price']
+        fields = ['category', 'min_price', 'max_price']
 
 class PageForCategory(PageNumberPagination):
     page_size = 20
@@ -28,7 +28,11 @@ class CategoryViewSet(ModelViewSet):
     queryset = Category.objects.select_related('parent').filter(parent=None)
     pagination_class = PageForCategory
     filter_backends = (DjangoFilterBackend,)
-    filterset_fields = ('name',)  # Should be ('name',)
+    filterset_fields = ('category',)
+    from decouple import config
+
+    print("DB_NAME:", config('DB_NAME'))
+
 
     def get_serializer_class(self):
         if self.action == 'create':

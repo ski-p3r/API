@@ -81,6 +81,14 @@
         "documentation": {}
     },
     {
+        "label": "views",
+        "importPath": "shop",
+        "description": "shop",
+        "isExtraImport": true,
+        "detail": "shop",
+        "documentation": {}
+    },
+    {
         "label": "get_wsgi_application",
         "importPath": "django.core.wsgi",
         "description": "django.core.wsgi",
@@ -233,6 +241,78 @@
         "documentation": {}
     },
     {
+        "label": "transaction",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "transaction",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "transaction",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "transaction",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "transaction",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "transaction",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "transaction",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "transaction",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "transaction",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "django.db.models.deletion",
         "kind": 6,
         "isExtraImport": true,
@@ -362,15 +442,6 @@
         "documentation": {}
     },
     {
-        "label": "sys",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "sys",
-        "description": "sys",
-        "detail": "sys",
-        "documentation": {}
-    },
-    {
         "label": "django",
         "kind": 6,
         "isExtraImport": true,
@@ -393,6 +464,231 @@
         "description": "shop.models",
         "isExtraImport": true,
         "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "Category",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "Category",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "Product",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "Category",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "Category",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "Product",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "Category",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "Category",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "Product",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "Category",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "Category",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "Product",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "Category",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "Category",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "Product",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "Category",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "Category",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "Product",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "Category",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "Category",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "Product",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "Category",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "Product",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "Category",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "Category",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "Product",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "Category",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
         "documentation": {}
     },
     {
@@ -562,7 +858,7 @@
         "kind": 5,
         "importPath": "api.urls",
         "description": "api.urls",
-        "peekOfCode": "router = DefaultRouter();\nurlpatterns = [\n    path('admin/', admin.site.urls),\n    path('__debug__/', include('debug_toolbar.urls')),\n    # path('', include('rest_framework.urls')),\n    path('', include('shop.urls')),\n] + router.urls",
+        "peekOfCode": "router = DefaultRouter();\nrouter.register('products', views.ProductViewSet, basename='product')\nrouter.register('categories', views.CategoryViewSet, basename='category')\nurlpatterns = [\n    path('admin/', admin.site.urls),\n    path('__debug__/', include('debug_toolbar.urls')),\n    # path('', include('rest_framework.urls')),\n] + router.urls",
         "detail": "api.urls",
         "documentation": {}
     },
@@ -571,7 +867,7 @@
         "kind": 5,
         "importPath": "api.urls",
         "description": "api.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('__debug__/', include('debug_toolbar.urls')),\n    # path('', include('rest_framework.urls')),\n    path('', include('shop.urls')),\n] + router.urls",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('__debug__/', include('debug_toolbar.urls')),\n    # path('', include('rest_framework.urls')),\n] + router.urls",
         "detail": "api.urls",
         "documentation": {}
     },
@@ -697,7 +993,7 @@
         "kind": 6,
         "importPath": "shop.serializers",
         "description": "shop.serializers",
-        "peekOfCode": "class RecursiveCategorySerializer(serializers.Serializer):\n    def to_representation(self, instance):\n        serializer = self.parent.parent.__class__(instance, context=self.context)\n        return serializer.data\nclass GetCategorySerializer(serializers.ModelSerializer):\n    child = RecursiveCategorySerializer(many=True, read_only=True)\n    class Meta:\n        model = Category\n        fields = ['id', 'name', 'child']\n    def to_representation(self, instance):",
+        "peekOfCode": "class RecursiveCategorySerializer(serializers.Serializer):\n    def to_representation(self, instance):\n        serializer = self.parent.parent.__class__(instance, context=self.context)\n        return serializer.data\nclass GetCategorySerializer(serializers.ModelSerializer):\n    child = RecursiveCategorySerializer(many=True, read_only=True)\n    product_count = serializers.SerializerMethodField()\n    class Meta:\n        model = Category\n        fields = ['id', 'name', 'child', 'product_count']",
         "detail": "shop.serializers",
         "documentation": {}
     },
@@ -706,7 +1002,16 @@
         "kind": 6,
         "importPath": "shop.serializers",
         "description": "shop.serializers",
-        "peekOfCode": "class GetCategorySerializer(serializers.ModelSerializer):\n    child = RecursiveCategorySerializer(many=True, read_only=True)\n    class Meta:\n        model = Category\n        fields = ['id', 'name', 'child']\n    def to_representation(self, instance):\n        data = super().to_representation(instance)\n        children = instance.child.all()\n        if not children:\n            data.pop('child')",
+        "peekOfCode": "class GetCategorySerializer(serializers.ModelSerializer):\n    child = RecursiveCategorySerializer(many=True, read_only=True)\n    product_count = serializers.SerializerMethodField()\n    class Meta:\n        model = Category\n        fields = ['id', 'name', 'child', 'product_count']\n    def get_product_count(self, instance):\n        # Count the number of products related to this category\n        return instance.products.count()\n    def to_representation(self, instance):",
+        "detail": "shop.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "SimpleCategorySerializer",
+        "kind": 6,
+        "importPath": "shop.serializers",
+        "description": "shop.serializers",
+        "peekOfCode": "class SimpleCategorySerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Category\n        fields = ['name']\nclass ProductSerializer(serializers.ModelSerializer):\n    category = SimpleCategorySerializer()\n    class Meta:\n        model = Product\n        fields = ['id', 'name', 'description', 'price', 'stock', 'category']\nclass CreateProductSerializer(serializers.ModelSerializer):",
         "detail": "shop.serializers",
         "documentation": {}
     },
@@ -715,7 +1020,7 @@
         "kind": 6,
         "importPath": "shop.serializers",
         "description": "shop.serializers",
-        "peekOfCode": "class ProductSerializer(serializers.ModelSerializer):\n    category = GetCategorySerializer()\n    class Meta:\n        model = Product\n        fields = ['id', 'name', 'description', 'price', 'stock', 'category']\nclass CreateProductSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Product\n        fields = ['id', 'name', 'description', 'price', 'stock', 'category']",
+        "peekOfCode": "class ProductSerializer(serializers.ModelSerializer):\n    category = SimpleCategorySerializer()\n    class Meta:\n        model = Product\n        fields = ['id', 'name', 'description', 'price', 'stock', 'category']\nclass CreateProductSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Product\n        fields = ['id', 'name', 'description', 'price', 'stock', 'category']",
         "detail": "shop.serializers",
         "documentation": {}
     },
@@ -742,7 +1047,7 @@
         "kind": 6,
         "importPath": "shop.views",
         "description": "shop.views",
-        "peekOfCode": "class ProductFilter(FilterSet):\n    min_price = NumberFilter(field_name='price', lookup_expr='gte')\n    max_price = NumberFilter(field_name='price', lookup_expr='lte')\n    class Meta:\n        model = Product\n        fields = ['min_price', 'max_price']\nclass PageForCategory(PageNumberPagination):\n    page_size = 20\n    page_size_query_param = 'page_size'\nclass ReadOnly(BasePermission):",
+        "peekOfCode": "class ProductFilter(FilterSet):\n    min_price = NumberFilter(field_name='price', lookup_expr='gte')\n    max_price = NumberFilter(field_name='price', lookup_expr='lte')\n    class Meta:\n        model = Product\n        fields = ['category', 'min_price', 'max_price']\nclass PageForCategory(PageNumberPagination):\n    page_size = 20\n    page_size_query_param = 'page_size'\nclass ReadOnly(BasePermission):",
         "detail": "shop.views",
         "documentation": {}
     },
@@ -760,7 +1065,7 @@
         "kind": 6,
         "importPath": "shop.views",
         "description": "shop.views",
-        "peekOfCode": "class ReadOnly(BasePermission):\n    def has_permission(self, request, view):\n        return request.method in SAFE_METHODS\nclass CategoryViewSet(ModelViewSet):\n    queryset = Category.objects.select_related('parent').filter(parent=None)\n    pagination_class = PageForCategory\n    filter_backends = (DjangoFilterBackend,)\n    filterset_fields = ('name',)  # Should be ('name',)\n    def get_serializer_class(self):\n        if self.action == 'create':",
+        "peekOfCode": "class ReadOnly(BasePermission):\n    def has_permission(self, request, view):\n        return request.method in SAFE_METHODS\nclass CategoryViewSet(ModelViewSet):\n    queryset = Category.objects.select_related('parent').filter(parent=None)\n    pagination_class = PageForCategory\n    filter_backends = (DjangoFilterBackend,)\n    filterset_fields = ('category',)\n    from decouple import config\n    print(\"DB_NAME:\", config('DB_NAME'))",
         "detail": "shop.views",
         "documentation": {}
     },
@@ -769,7 +1074,7 @@
         "kind": 6,
         "importPath": "shop.views",
         "description": "shop.views",
-        "peekOfCode": "class CategoryViewSet(ModelViewSet):\n    queryset = Category.objects.select_related('parent').filter(parent=None)\n    pagination_class = PageForCategory\n    filter_backends = (DjangoFilterBackend,)\n    filterset_fields = ('name',)  # Should be ('name',)\n    def get_serializer_class(self):\n        if self.action == 'create':\n            return CategorySerializer\n        elif self.action == 'list' or self.action == 'retrieve':\n            return GetCategorySerializer",
+        "peekOfCode": "class CategoryViewSet(ModelViewSet):\n    queryset = Category.objects.select_related('parent').filter(parent=None)\n    pagination_class = PageForCategory\n    filter_backends = (DjangoFilterBackend,)\n    filterset_fields = ('category',)\n    from decouple import config\n    print(\"DB_NAME:\", config('DB_NAME'))\n    def get_serializer_class(self):\n        if self.action == 'create':\n            return CategorySerializer",
         "detail": "shop.views",
         "documentation": {}
     },
@@ -780,6 +1085,69 @@
         "description": "shop.views",
         "peekOfCode": "class ProductViewSet(ModelViewSet):\n    queryset = Product.objects.all()\n    pagination_class = PageForCategory\n    filter_backends = (DjangoFilterBackend,SearchFilter)\n    search_fields = ['name', 'description']\n    filterset_class = ProductFilter\n    permission_classes = [IsAdminUser|ReadOnly]\n    def get_serializer_context(self):\n        return {'user': self.request.user}\n    def get_serializer_class(self):",
         "detail": "shop.views",
+        "documentation": {}
+    },
+    {
+        "label": "seed_data",
+        "kind": 2,
+        "importPath": "automotive_product_seed",
+        "description": "automotive_product_seed",
+        "peekOfCode": "def seed_data():\n    products_data = [\n        # Car Accessories\n        {\n            \"category\": \"Car Accessories\",\n            \"name\": \"Anker Roav Dash Cam\",\n            \"description\": \"A high-resolution dash cam that records clear footage of your drives and provides extra security on the road.\",\n            \"price\": 89.99,\n            \"stock\": 25,\n        },",
+        "detail": "automotive_product_seed",
+        "documentation": {}
+    },
+    {
+        "label": "seed_data",
+        "kind": 2,
+        "importPath": "beauty_products_seed",
+        "description": "beauty_products_seed",
+        "peekOfCode": "def seed_data():\n    products_data = [\n        # Skincare\n        {\n            \"category\": \"Skincare\",\n            \"name\": \"CeraVe Hydrating Cleanser\",\n            \"description\": \"A gentle and hydrating facial cleanser that effectively removes dirt and makeup without over-drying the skin.\",\n            \"price\": 12.99,\n            \"stock\": 40,\n        },",
+        "detail": "beauty_products_seed",
+        "documentation": {}
+    },
+    {
+        "label": "seed_data",
+        "kind": 2,
+        "importPath": "books_and_media_product_seed",
+        "description": "books_and_media_product_seed",
+        "peekOfCode": "def seed_data():\n    products_data = [\n        # Fiction\n        {\n            \"category\": \"Fiction\",\n            \"name\": \"The Great Gatsby by F. Scott Fitzgerald\",\n            \"description\": \"A classic novel set in the Roaring Twenties, exploring themes of wealth, love, and the American Dream.\",\n            \"price\": 14.99,\n            \"stock\": 25,\n        },",
+        "detail": "books_and_media_product_seed",
+        "documentation": {}
+    },
+    {
+        "label": "seed_data",
+        "kind": 2,
+        "importPath": "category_seed",
+        "description": "category_seed",
+        "peekOfCode": "def seed_data():\n    categories_data = [\n        {\"name\": \"Electronics\", \"subcategories\": [\"Smartphones\", \"Laptops\", \"Headphones & Speakers\", \"Wearable Devices\", \"Cameras & Photography\", \"Accessories\"]},\n        {\"name\": \"Clothing\", \"subcategories\": [\"Men's Clothing\", \"Women's Clothing\", \"Kids' Clothing\", \"Shoes & Footwear\", \"Sportswear\", \"Lingerie & Sleepwear\"]},\n        {\"name\": \"Home & Kitchen\", \"subcategories\": [\"Furniture\", \"Kitchen Appliances\", \"Home Decor\", \"Bedding & Linens\", \"Cookware & Dining\", \"Cleaning Supplies\"]},\n        {\"name\": \"Sports & Outdoors\", \"subcategories\": [\"Fitness Equipment\", \"Outdoor Gear\", \"Sports Apparel\", \"Biking\", \"Camping & Hiking\", \"Team Sports\"]},\n        {\"name\": \"Books & Media\", \"subcategories\": [\"Fiction\", \"Non-Fiction\", \"Textbooks\", \"Movies & TV Shows\", \"Music\", \"Magazines\"]},\n        {\"name\": \"Toys & Games\", \"subcategories\": [\"Action Figures & Playsets\", \"Board Games\", \"Outdoor Toys\", \"Puzzles\", \"Dolls & Accessories\"]},\n        {\"name\": \"Beauty & Personal Care\", \"subcategories\": [\"Skincare\", \"Haircare\", \"Makeup\", \"Fragrances\", \"Personal Hygiene\"]},\n        {\"name\": \"Automotive\", \"subcategories\": [\"Car Accessories\", \"Motorcycle Parts\", \"Car Care\", \"Tires & Wheels\"]},",
+        "detail": "category_seed",
+        "documentation": {}
+    },
+    {
+        "label": "seed_data",
+        "kind": 2,
+        "importPath": "clothing_product_seed",
+        "description": "clothing_product_seed",
+        "peekOfCode": "def seed_data():\n    products_data = [\n        # Men's Clothing\n        {\n            \"category\": \"Men's Clothing\",\n            \"name\": \"Men's Slim-Fit Suit\",\n            \"description\": \"A classic slim-fit suit for men, perfect for formal occasions and business meetings.\",\n            \"price\": 299.99,\n            \"stock\": 20,\n        },",
+        "detail": "clothing_product_seed",
+        "documentation": {}
+    },
+    {
+        "label": "seed_data",
+        "kind": 2,
+        "importPath": "electronics_product_seeed",
+        "description": "electronics_product_seeed",
+        "peekOfCode": "def seed_data():\n    products_data = [\n        {\n            \"category\": \"Smartphones\",\n            \"name\": \"Apple iPhone 13 Pro Max\",\n            \"description\": \"The latest flagship smartphone from Apple with a stunning Super Retina XDR display, A15 Bionic chip, and advanced camera system.\",\n            \"price\": 1099.00,\n            \"stock\": 50,\n        },\n        {",
+        "detail": "electronics_product_seeed",
+        "documentation": {}
+    },
+    {
+        "label": "seed_data",
+        "kind": 2,
+        "importPath": "home_and_kitchen_product_seed",
+        "description": "home_and_kitchen_product_seed",
+        "peekOfCode": "def seed_data():\n    products_data = [\n        # Furniture\n        {\n            \"category\": \"Furniture\",\n            \"name\": \"3-Piece Living Room Set\",\n            \"description\": \"A stylish and comfortable living room set including a sofa, loveseat, and coffee table.\",\n            \"price\": 899.99,\n            \"stock\": 15,\n        },",
+        "detail": "home_and_kitchen_product_seed",
         "documentation": {}
     },
     {
@@ -798,6 +1166,24 @@
         "description": "seed",
         "peekOfCode": "def seed_data():\n    products = [\n            {\n                'name': 'Samsung Galaxy S21',\n                'description': 'High-end Samsung smartphone with a stunning display.',\n                'price': 799.99,\n                'stock': 50,\n                'category': 'Smartphones'\n            },\n            {",
         "detail": "seed",
+        "documentation": {}
+    },
+    {
+        "label": "seed_data",
+        "kind": 2,
+        "importPath": "sport_and_outdor_product_seed",
+        "description": "sport_and_outdor_product_seed",
+        "peekOfCode": "def seed_data():\n    products_data = [\n        # Fitness Equipment\n        {\n            \"category\": \"Fitness Equipment\",\n            \"name\": \"Treadmill with Incline\",\n            \"description\": \"A high-quality treadmill with adjustable incline, perfect for cardio workouts at home.\",\n            \"price\": 899.99,\n            \"stock\": 10,\n        },",
+        "detail": "sport_and_outdor_product_seed",
+        "documentation": {}
+    },
+    {
+        "label": "seed_data",
+        "kind": 2,
+        "importPath": "toys_and_games_product_seed",
+        "description": "toys_and_games_product_seed",
+        "peekOfCode": "def seed_data():\n    products_data = [\n        # Action Figures & Playsets\n        {\n            \"category\": \"Action Figures & Playsets\",\n            \"name\": \"Marvel Avengers Action Figure Set\",\n            \"description\": \"A set of action figures featuring iconic Marvel Avengers characters for imaginative play and display.\",\n            \"price\": 34.99,\n            \"stock\": 30,\n        },",
+        "detail": "toys_and_games_product_seed",
         "documentation": {}
     }
 ]

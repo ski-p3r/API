@@ -12,6 +12,7 @@ psycopg2-binary = "*"
 markdown = "*"
 django-filter = "*"
 djangorestframework-recursive = "*"
+python-dotenv = "*"
 
 [dev-packages]
 
