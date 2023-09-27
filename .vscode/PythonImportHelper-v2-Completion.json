@@ -73,6 +73,14 @@
         "documentation": {}
     },
     {
+        "label": "reverse",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
         "label": "DefaultRouter",
         "importPath": "rest_framework.routers",
         "description": "rest_framework.routers",
@@ -361,6 +369,22 @@
         "documentation": {}
     },
     {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
         "label": "render",
         "importPath": "django.shortcuts",
         "description": "django.shortcuts",
@@ -375,6 +399,262 @@
         "importPath": "django.db.models.deletion",
         "description": "django.db.models.deletion",
         "detail": "django.db.models.deletion",
+        "documentation": {}
+    },
+    {
+        "label": "Product",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "Product",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "Category",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "Product",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "Category",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "Category",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "Product",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "Category",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "Category",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "Product",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "Category",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "Category",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "Product",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "Category",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "Category",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "Product",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "Category",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "Category",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "Product",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "Category",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "Category",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "Product",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "Category",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "Category",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "Product",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "Category",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "Product",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "Category",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "Category",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "Product",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "Category",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "ProductViewSet",
+        "importPath": "shop.views",
+        "description": "shop.views",
+        "isExtraImport": true,
+        "detail": "shop.views",
         "documentation": {}
     },
     {
@@ -488,238 +768,6 @@
         "importPath": "django",
         "description": "django",
         "detail": "django",
-        "documentation": {}
-    },
-    {
-        "label": "Category",
-        "importPath": "shop.models",
-        "description": "shop.models",
-        "isExtraImport": true,
-        "detail": "shop.models",
-        "documentation": {}
-    },
-    {
-        "label": "Product",
-        "importPath": "shop.models",
-        "description": "shop.models",
-        "isExtraImport": true,
-        "detail": "shop.models",
-        "documentation": {}
-    },
-    {
-        "label": "Category",
-        "importPath": "shop.models",
-        "description": "shop.models",
-        "isExtraImport": true,
-        "detail": "shop.models",
-        "documentation": {}
-    },
-    {
-        "label": "Category",
-        "importPath": "shop.models",
-        "description": "shop.models",
-        "isExtraImport": true,
-        "detail": "shop.models",
-        "documentation": {}
-    },
-    {
-        "label": "Product",
-        "importPath": "shop.models",
-        "description": "shop.models",
-        "isExtraImport": true,
-        "detail": "shop.models",
-        "documentation": {}
-    },
-    {
-        "label": "Category",
-        "importPath": "shop.models",
-        "description": "shop.models",
-        "isExtraImport": true,
-        "detail": "shop.models",
-        "documentation": {}
-    },
-    {
-        "label": "Category",
-        "importPath": "shop.models",
-        "description": "shop.models",
-        "isExtraImport": true,
-        "detail": "shop.models",
-        "documentation": {}
-    },
-    {
-        "label": "Product",
-        "importPath": "shop.models",
-        "description": "shop.models",
-        "isExtraImport": true,
-        "detail": "shop.models",
-        "documentation": {}
-    },
-    {
-        "label": "Category",
-        "importPath": "shop.models",
-        "description": "shop.models",
-        "isExtraImport": true,
-        "detail": "shop.models",
-        "documentation": {}
-    },
-    {
-        "label": "Category",
-        "importPath": "shop.models",
-        "description": "shop.models",
-        "isExtraImport": true,
-        "detail": "shop.models",
-        "documentation": {}
-    },
-    {
-        "label": "Product",
-        "importPath": "shop.models",
-        "description": "shop.models",
-        "isExtraImport": true,
-        "detail": "shop.models",
-        "documentation": {}
-    },
-    {
-        "label": "Category",
-        "importPath": "shop.models",
-        "description": "shop.models",
-        "isExtraImport": true,
-        "detail": "shop.models",
-        "documentation": {}
-    },
-    {
-        "label": "Category",
-        "importPath": "shop.models",
-        "description": "shop.models",
-        "isExtraImport": true,
-        "detail": "shop.models",
-        "documentation": {}
-    },
-    {
-        "label": "Product",
-        "importPath": "shop.models",
-        "description": "shop.models",
-        "isExtraImport": true,
-        "detail": "shop.models",
-        "documentation": {}
-    },
-    {
-        "label": "Category",
-        "importPath": "shop.models",
-        "description": "shop.models",
-        "isExtraImport": true,
-        "detail": "shop.models",
-        "documentation": {}
-    },
-    {
-        "label": "Category",
-        "importPath": "shop.models",
-        "description": "shop.models",
-        "isExtraImport": true,
-        "detail": "shop.models",
-        "documentation": {}
-    },
-    {
-        "label": "Product",
-        "importPath": "shop.models",
-        "description": "shop.models",
-        "isExtraImport": true,
-        "detail": "shop.models",
-        "documentation": {}
-    },
-    {
-        "label": "Category",
-        "importPath": "shop.models",
-        "description": "shop.models",
-        "isExtraImport": true,
-        "detail": "shop.models",
-        "documentation": {}
-    },
-    {
-        "label": "Category",
-        "importPath": "shop.models",
-        "description": "shop.models",
-        "isExtraImport": true,
-        "detail": "shop.models",
-        "documentation": {}
-    },
-    {
-        "label": "Product",
-        "importPath": "shop.models",
-        "description": "shop.models",
-        "isExtraImport": true,
-        "detail": "shop.models",
-        "documentation": {}
-    },
-    {
-        "label": "Category",
-        "importPath": "shop.models",
-        "description": "shop.models",
-        "isExtraImport": true,
-        "detail": "shop.models",
-        "documentation": {}
-    },
-    {
-        "label": "Category",
-        "importPath": "shop.models",
-        "description": "shop.models",
-        "isExtraImport": true,
-        "detail": "shop.models",
-        "documentation": {}
-    },
-    {
-        "label": "Product",
-        "importPath": "shop.models",
-        "description": "shop.models",
-        "isExtraImport": true,
-        "detail": "shop.models",
-        "documentation": {}
-    },
-    {
-        "label": "Category",
-        "importPath": "shop.models",
-        "description": "shop.models",
-        "isExtraImport": true,
-        "detail": "shop.models",
-        "documentation": {}
-    },
-    {
-        "label": "Product",
-        "importPath": "shop.models",
-        "description": "shop.models",
-        "isExtraImport": true,
-        "detail": "shop.models",
-        "documentation": {}
-    },
-    {
-        "label": "Category",
-        "importPath": "shop.models",
-        "description": "shop.models",
-        "isExtraImport": true,
-        "detail": "shop.models",
-        "documentation": {}
-    },
-    {
-        "label": "Category",
-        "importPath": "shop.models",
-        "description": "shop.models",
-        "isExtraImport": true,
-        "detail": "shop.models",
-        "documentation": {}
-    },
-    {
-        "label": "Product",
-        "importPath": "shop.models",
-        "description": "shop.models",
-        "isExtraImport": true,
-        "detail": "shop.models",
-        "documentation": {}
-    },
-    {
-        "label": "Category",
-        "importPath": "shop.models",
-        "description": "shop.models",
-        "isExtraImport": true,
-        "detail": "shop.models",
         "documentation": {}
     },
     {
@@ -999,6 +1047,24 @@
         "description": "shop.migrations.0008_alter_category_parent",
         "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('shop', '0007_remove_category_parent_category_parent'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='category',\n            name='parent',\n            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, related_name='child', to='shop.category'),\n        ),",
         "detail": "shop.migrations.0008_alter_category_parent",
+        "documentation": {}
+    },
+    {
+        "label": "ProductModelTestCase",
+        "kind": 6,
+        "importPath": "shop.tests.test_models",
+        "description": "shop.tests.test_models",
+        "peekOfCode": "class ProductModelTestCase(TestCase):\n    def setUp(self):\n        self.product = Product.objects.create(\n            name=\"Test Product\",\n            description=\"This is a test product description.\",\n            price=19.99,\n            stock=10,\n        )\n    def test_product_name(self):\n        self.assertEqual(self.product.name, \"Test Product\")",
+        "detail": "shop.tests.test_models",
+        "documentation": {}
+    },
+    {
+        "label": "ProductViewSetTestCase",
+        "kind": 6,
+        "importPath": "shop.tests.test_views",
+        "description": "shop.tests.test_views",
+        "peekOfCode": "class ProductViewSetTestCase(TestCase):\n    def setUp(self):\n        self.product = Product.objects.create(\n            name=\"Test Product\",\n            description=\"This is a test product description.\",\n            price=19.99,\n            stock=10,\n        )\n    def test_product_list_view(self):\n        url = reverse(\"product-list\")",
+        "detail": "shop.tests.test_views",
         "documentation": {}
     },
     {
