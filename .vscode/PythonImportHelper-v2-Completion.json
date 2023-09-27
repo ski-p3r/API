@@ -113,6 +113,264 @@
         "documentation": {}
     },
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "transaction",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "transaction",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "transaction",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "transaction",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "transaction",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "transaction",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "transaction",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "transaction",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "transaction",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "transaction",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "django.db.models.deletion",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.db.models.deletion",
+        "description": "django.db.models.deletion",
+        "detail": "django.db.models.deletion",
+        "documentation": {}
+    },
+    {
+        "label": "uuid",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "uuid",
+        "description": "uuid",
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
         "label": "AppConfig",
         "importPath": "django.apps",
         "description": "django.apps",
@@ -129,227 +387,259 @@
         "documentation": {}
     },
     {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
+        "label": "Product",
+        "importPath": "shop.models",
+        "description": "shop.models",
         "isExtraImport": true,
-        "detail": "django.db",
+        "detail": "shop.models",
         "documentation": {}
     },
     {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
+        "label": "Product",
+        "importPath": "shop.models",
+        "description": "shop.models",
         "isExtraImport": true,
-        "detail": "django.db",
+        "detail": "shop.models",
         "documentation": {}
     },
     {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
+        "label": "Product",
+        "importPath": "shop.models",
+        "description": "shop.models",
         "isExtraImport": true,
-        "detail": "django.db",
+        "detail": "shop.models",
         "documentation": {}
     },
     {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
+        "label": "Category",
+        "importPath": "shop.models",
+        "description": "shop.models",
         "isExtraImport": true,
-        "detail": "django.db",
+        "detail": "shop.models",
         "documentation": {}
     },
     {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
+        "label": "Product",
+        "importPath": "shop.models",
+        "description": "shop.models",
         "isExtraImport": true,
-        "detail": "django.db",
+        "detail": "shop.models",
         "documentation": {}
     },
     {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
+        "label": "Category",
+        "importPath": "shop.models",
+        "description": "shop.models",
         "isExtraImport": true,
-        "detail": "django.db",
+        "detail": "shop.models",
         "documentation": {}
     },
     {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
+        "label": "Category",
+        "importPath": "shop.models",
+        "description": "shop.models",
         "isExtraImport": true,
-        "detail": "django.db",
+        "detail": "shop.models",
         "documentation": {}
     },
     {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
+        "label": "Product",
+        "importPath": "shop.models",
+        "description": "shop.models",
         "isExtraImport": true,
-        "detail": "django.db",
+        "detail": "shop.models",
         "documentation": {}
     },
     {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
+        "label": "Category",
+        "importPath": "shop.models",
+        "description": "shop.models",
         "isExtraImport": true,
-        "detail": "django.db",
+        "detail": "shop.models",
         "documentation": {}
     },
     {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
+        "label": "Category",
+        "importPath": "shop.models",
+        "description": "shop.models",
         "isExtraImport": true,
-        "detail": "django.db",
+        "detail": "shop.models",
         "documentation": {}
     },
     {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
+        "label": "Product",
+        "importPath": "shop.models",
+        "description": "shop.models",
         "isExtraImport": true,
-        "detail": "django.db",
+        "detail": "shop.models",
         "documentation": {}
     },
     {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
+        "label": "Category",
+        "importPath": "shop.models",
+        "description": "shop.models",
         "isExtraImport": true,
-        "detail": "django.db",
+        "detail": "shop.models",
         "documentation": {}
     },
     {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
+        "label": "Category",
+        "importPath": "shop.models",
+        "description": "shop.models",
         "isExtraImport": true,
-        "detail": "django.db",
+        "detail": "shop.models",
         "documentation": {}
     },
     {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
+        "label": "Product",
+        "importPath": "shop.models",
+        "description": "shop.models",
         "isExtraImport": true,
-        "detail": "django.db",
+        "detail": "shop.models",
         "documentation": {}
     },
     {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
+        "label": "Category",
+        "importPath": "shop.models",
+        "description": "shop.models",
         "isExtraImport": true,
-        "detail": "django.db",
+        "detail": "shop.models",
         "documentation": {}
     },
     {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
+        "label": "Category",
+        "importPath": "shop.models",
+        "description": "shop.models",
         "isExtraImport": true,
-        "detail": "django.db",
+        "detail": "shop.models",
         "documentation": {}
     },
     {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
+        "label": "Product",
+        "importPath": "shop.models",
+        "description": "shop.models",
         "isExtraImport": true,
-        "detail": "django.db",
+        "detail": "shop.models",
         "documentation": {}
     },
     {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
+        "label": "Category",
+        "importPath": "shop.models",
+        "description": "shop.models",
         "isExtraImport": true,
-        "detail": "django.db",
+        "detail": "shop.models",
         "documentation": {}
     },
     {
-        "label": "transaction",
-        "importPath": "django.db",
-        "description": "django.db",
+        "label": "Category",
+        "importPath": "shop.models",
+        "description": "shop.models",
         "isExtraImport": true,
-        "detail": "django.db",
+        "detail": "shop.models",
         "documentation": {}
     },
     {
-        "label": "transaction",
-        "importPath": "django.db",
-        "description": "django.db",
+        "label": "Product",
+        "importPath": "shop.models",
+        "description": "shop.models",
         "isExtraImport": true,
-        "detail": "django.db",
+        "detail": "shop.models",
         "documentation": {}
     },
     {
-        "label": "transaction",
-        "importPath": "django.db",
-        "description": "django.db",
+        "label": "Category",
+        "importPath": "shop.models",
+        "description": "shop.models",
         "isExtraImport": true,
-        "detail": "django.db",
+        "detail": "shop.models",
         "documentation": {}
     },
     {
-        "label": "transaction",
-        "importPath": "django.db",
-        "description": "django.db",
+        "label": "Category",
+        "importPath": "shop.models",
+        "description": "shop.models",
         "isExtraImport": true,
-        "detail": "django.db",
+        "detail": "shop.models",
         "documentation": {}
     },
     {
-        "label": "transaction",
-        "importPath": "django.db",
-        "description": "django.db",
+        "label": "Product",
+        "importPath": "shop.models",
+        "description": "shop.models",
         "isExtraImport": true,
-        "detail": "django.db",
+        "detail": "shop.models",
         "documentation": {}
     },
     {
-        "label": "transaction",
-        "importPath": "django.db",
-        "description": "django.db",
+        "label": "Category",
+        "importPath": "shop.models",
+        "description": "shop.models",
         "isExtraImport": true,
-        "detail": "django.db",
+        "detail": "shop.models",
         "documentation": {}
     },
     {
-        "label": "transaction",
-        "importPath": "django.db",
-        "description": "django.db",
+        "label": "Category",
+        "importPath": "shop.models",
+        "description": "shop.models",
         "isExtraImport": true,
-        "detail": "django.db",
+        "detail": "shop.models",
         "documentation": {}
     },
     {
-        "label": "transaction",
-        "importPath": "django.db",
-        "description": "django.db",
+        "label": "Product",
+        "importPath": "shop.models",
+        "description": "shop.models",
         "isExtraImport": true,
-        "detail": "django.db",
+        "detail": "shop.models",
         "documentation": {}
     },
     {
-        "label": "transaction",
-        "importPath": "django.db",
-        "description": "django.db",
+        "label": "Category",
+        "importPath": "shop.models",
+        "description": "shop.models",
         "isExtraImport": true,
-        "detail": "django.db",
+        "detail": "shop.models",
         "documentation": {}
     },
     {
-        "label": "transaction",
-        "importPath": "django.db",
-        "description": "django.db",
+        "label": "Product",
+        "importPath": "shop.models",
+        "description": "shop.models",
         "isExtraImport": true,
-        "detail": "django.db",
+        "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "Category",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "Category",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "Product",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "Category",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
         "documentation": {}
     },
     {
@@ -390,263 +680,6 @@
         "description": "django.shortcuts",
         "isExtraImport": true,
         "detail": "django.shortcuts",
-        "documentation": {}
-    },
-    {
-        "label": "django.db.models.deletion",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "django.db.models.deletion",
-        "description": "django.db.models.deletion",
-        "detail": "django.db.models.deletion",
-        "documentation": {}
-    },
-    {
-        "label": "Product",
-        "importPath": "shop.models",
-        "description": "shop.models",
-        "isExtraImport": true,
-        "detail": "shop.models",
-        "documentation": {}
-    },
-    {
-        "label": "Product",
-        "importPath": "shop.models",
-        "description": "shop.models",
-        "isExtraImport": true,
-        "detail": "shop.models",
-        "documentation": {}
-    },
-    {
-        "label": "Category",
-        "importPath": "shop.models",
-        "description": "shop.models",
-        "isExtraImport": true,
-        "detail": "shop.models",
-        "documentation": {}
-    },
-    {
-        "label": "Product",
-        "importPath": "shop.models",
-        "description": "shop.models",
-        "isExtraImport": true,
-        "detail": "shop.models",
-        "documentation": {}
-    },
-    {
-        "label": "Category",
-        "importPath": "shop.models",
-        "description": "shop.models",
-        "isExtraImport": true,
-        "detail": "shop.models",
-        "documentation": {}
-    },
-    {
-        "label": "Category",
-        "importPath": "shop.models",
-        "description": "shop.models",
-        "isExtraImport": true,
-        "detail": "shop.models",
-        "documentation": {}
-    },
-    {
-        "label": "Product",
-        "importPath": "shop.models",
-        "description": "shop.models",
-        "isExtraImport": true,
-        "detail": "shop.models",
-        "documentation": {}
-    },
-    {
-        "label": "Category",
-        "importPath": "shop.models",
-        "description": "shop.models",
-        "isExtraImport": true,
-        "detail": "shop.models",
-        "documentation": {}
-    },
-    {
-        "label": "Category",
-        "importPath": "shop.models",
-        "description": "shop.models",
-        "isExtraImport": true,
-        "detail": "shop.models",
-        "documentation": {}
-    },
-    {
-        "label": "Product",
-        "importPath": "shop.models",
-        "description": "shop.models",
-        "isExtraImport": true,
-        "detail": "shop.models",
-        "documentation": {}
-    },
-    {
-        "label": "Category",
-        "importPath": "shop.models",
-        "description": "shop.models",
-        "isExtraImport": true,
-        "detail": "shop.models",
-        "documentation": {}
-    },
-    {
-        "label": "Category",
-        "importPath": "shop.models",
-        "description": "shop.models",
-        "isExtraImport": true,
-        "detail": "shop.models",
-        "documentation": {}
-    },
-    {
-        "label": "Product",
-        "importPath": "shop.models",
-        "description": "shop.models",
-        "isExtraImport": true,
-        "detail": "shop.models",
-        "documentation": {}
-    },
-    {
-        "label": "Category",
-        "importPath": "shop.models",
-        "description": "shop.models",
-        "isExtraImport": true,
-        "detail": "shop.models",
-        "documentation": {}
-    },
-    {
-        "label": "Category",
-        "importPath": "shop.models",
-        "description": "shop.models",
-        "isExtraImport": true,
-        "detail": "shop.models",
-        "documentation": {}
-    },
-    {
-        "label": "Product",
-        "importPath": "shop.models",
-        "description": "shop.models",
-        "isExtraImport": true,
-        "detail": "shop.models",
-        "documentation": {}
-    },
-    {
-        "label": "Category",
-        "importPath": "shop.models",
-        "description": "shop.models",
-        "isExtraImport": true,
-        "detail": "shop.models",
-        "documentation": {}
-    },
-    {
-        "label": "Category",
-        "importPath": "shop.models",
-        "description": "shop.models",
-        "isExtraImport": true,
-        "detail": "shop.models",
-        "documentation": {}
-    },
-    {
-        "label": "Product",
-        "importPath": "shop.models",
-        "description": "shop.models",
-        "isExtraImport": true,
-        "detail": "shop.models",
-        "documentation": {}
-    },
-    {
-        "label": "Category",
-        "importPath": "shop.models",
-        "description": "shop.models",
-        "isExtraImport": true,
-        "detail": "shop.models",
-        "documentation": {}
-    },
-    {
-        "label": "Category",
-        "importPath": "shop.models",
-        "description": "shop.models",
-        "isExtraImport": true,
-        "detail": "shop.models",
-        "documentation": {}
-    },
-    {
-        "label": "Product",
-        "importPath": "shop.models",
-        "description": "shop.models",
-        "isExtraImport": true,
-        "detail": "shop.models",
-        "documentation": {}
-    },
-    {
-        "label": "Category",
-        "importPath": "shop.models",
-        "description": "shop.models",
-        "isExtraImport": true,
-        "detail": "shop.models",
-        "documentation": {}
-    },
-    {
-        "label": "Category",
-        "importPath": "shop.models",
-        "description": "shop.models",
-        "isExtraImport": true,
-        "detail": "shop.models",
-        "documentation": {}
-    },
-    {
-        "label": "Product",
-        "importPath": "shop.models",
-        "description": "shop.models",
-        "isExtraImport": true,
-        "detail": "shop.models",
-        "documentation": {}
-    },
-    {
-        "label": "Category",
-        "importPath": "shop.models",
-        "description": "shop.models",
-        "isExtraImport": true,
-        "detail": "shop.models",
-        "documentation": {}
-    },
-    {
-        "label": "Product",
-        "importPath": "shop.models",
-        "description": "shop.models",
-        "isExtraImport": true,
-        "detail": "shop.models",
-        "documentation": {}
-    },
-    {
-        "label": "Category",
-        "importPath": "shop.models",
-        "description": "shop.models",
-        "isExtraImport": true,
-        "detail": "shop.models",
-        "documentation": {}
-    },
-    {
-        "label": "Category",
-        "importPath": "shop.models",
-        "description": "shop.models",
-        "isExtraImport": true,
-        "detail": "shop.models",
-        "documentation": {}
-    },
-    {
-        "label": "Product",
-        "importPath": "shop.models",
-        "description": "shop.models",
-        "isExtraImport": true,
-        "detail": "shop.models",
-        "documentation": {}
-    },
-    {
-        "label": "Category",
-        "importPath": "shop.models",
-        "description": "shop.models",
-        "isExtraImport": true,
-        "detail": "shop.models",
         "documentation": {}
     },
     {
@@ -969,12 +1002,39 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "cart.migrations.0001_initial",
+        "description": "cart.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        ('shop', '0008_alter_category_parent'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Cart',\n            fields=[\n                ('id', models.UUIDField(default=uuid.uuid4, editable=False, primary_key=True, serialize=False)),",
+        "detail": "cart.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
         "label": "CartConfig",
         "kind": 6,
         "importPath": "cart.apps",
         "description": "cart.apps",
         "peekOfCode": "class CartConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'cart'",
         "detail": "cart.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Cart",
+        "kind": 6,
+        "importPath": "cart.models",
+        "description": "cart.models",
+        "peekOfCode": "class Cart(models.Model):\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)\n    created_at = models.DateTimeField(auto_now_add=True)\n    def __str__(self):\n        return self.id\nclass CartItem(models.Model):\n    cart = models.ForeignKey(Cart, on_delete=models.CASCADE)\n    product = models.ForeignKey(Product, on_delete=models.PROTECT)\n    quantity = models.PositiveIntegerField(default=1)\n    created_at = models.DateTimeField(auto_now_add=True)",
+        "detail": "cart.models",
+        "documentation": {}
+    },
+    {
+        "label": "CartItem",
+        "kind": 6,
+        "importPath": "cart.models",
+        "description": "cart.models",
+        "peekOfCode": "class CartItem(models.Model):\n    cart = models.ForeignKey(Cart, on_delete=models.CASCADE)\n    product = models.ForeignKey(Product, on_delete=models.PROTECT)\n    quantity = models.PositiveIntegerField(default=1)\n    created_at = models.DateTimeField(auto_now_add=True)\n    def __str__(self):\n        return self.cart.id",
+        "detail": "cart.models",
         "documentation": {}
     },
     {
