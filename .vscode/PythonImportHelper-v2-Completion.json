@@ -105,6 +105,14 @@
         "documentation": {}
     },
     {
+        "label": "CartViewSet",
+        "importPath": "cart.views",
+        "description": "cart.views",
+        "isExtraImport": true,
+        "detail": "cart.views",
+        "documentation": {}
+    },
+    {
         "label": "get_wsgi_application",
         "importPath": "django.core.wsgi",
         "description": "django.core.wsgi",
@@ -411,6 +419,62 @@
         "documentation": {}
     },
     {
+        "label": "Product",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "Category",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "Product",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "Category",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "Category",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "Product",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "Category",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
+        "documentation": {}
+    },
+    {
         "label": "Category",
         "importPath": "shop.models",
         "description": "shop.models",
@@ -555,14 +619,6 @@
         "documentation": {}
     },
     {
-        "label": "Category",
-        "importPath": "shop.models",
-        "description": "shop.models",
-        "isExtraImport": true,
-        "detail": "shop.models",
-        "documentation": {}
-    },
-    {
         "label": "Product",
         "importPath": "shop.models",
         "description": "shop.models",
@@ -603,43 +659,27 @@
         "documentation": {}
     },
     {
-        "label": "Product",
-        "importPath": "shop.models",
-        "description": "shop.models",
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
         "isExtraImport": true,
-        "detail": "shop.models",
+        "detail": "rest_framework",
         "documentation": {}
     },
     {
-        "label": "Category",
-        "importPath": "shop.models",
-        "description": "shop.models",
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
         "isExtraImport": true,
-        "detail": "shop.models",
+        "detail": "rest_framework",
         "documentation": {}
     },
     {
-        "label": "Category",
-        "importPath": "shop.models",
-        "description": "shop.models",
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
         "isExtraImport": true,
-        "detail": "shop.models",
-        "documentation": {}
-    },
-    {
-        "label": "Product",
-        "importPath": "shop.models",
-        "description": "shop.models",
-        "isExtraImport": true,
-        "detail": "shop.models",
-        "documentation": {}
-    },
-    {
-        "label": "Category",
-        "importPath": "shop.models",
-        "description": "shop.models",
-        "isExtraImport": true,
-        "detail": "shop.models",
+        "detail": "rest_framework",
         "documentation": {}
     },
     {
@@ -683,27 +723,27 @@
         "documentation": {}
     },
     {
+        "label": "ModelViewSet",
+        "importPath": "rest_framework.viewsets",
+        "description": "rest_framework.viewsets",
+        "isExtraImport": true,
+        "detail": "rest_framework.viewsets",
+        "documentation": {}
+    },
+    {
+        "label": "ModelViewSet",
+        "importPath": "rest_framework.viewsets",
+        "description": "rest_framework.viewsets",
+        "isExtraImport": true,
+        "detail": "rest_framework.viewsets",
+        "documentation": {}
+    },
+    {
         "label": "ProductViewSet",
         "importPath": "shop.views",
         "description": "shop.views",
         "isExtraImport": true,
         "detail": "shop.views",
-        "documentation": {}
-    },
-    {
-        "label": "serializers",
-        "importPath": "rest_framework",
-        "description": "rest_framework",
-        "isExtraImport": true,
-        "detail": "rest_framework",
-        "documentation": {}
-    },
-    {
-        "label": "status",
-        "importPath": "rest_framework",
-        "description": "rest_framework",
-        "isExtraImport": true,
-        "detail": "rest_framework",
         "documentation": {}
     },
     {
@@ -744,14 +784,6 @@
         "description": "rest_framework.filters",
         "isExtraImport": true,
         "detail": "rest_framework.filters",
-        "documentation": {}
-    },
-    {
-        "label": "ModelViewSet",
-        "importPath": "rest_framework.viewsets",
-        "description": "rest_framework.viewsets",
-        "isExtraImport": true,
-        "detail": "rest_framework.viewsets",
         "documentation": {}
     },
     {
@@ -979,7 +1011,7 @@
         "kind": 5,
         "importPath": "api.urls",
         "description": "api.urls",
-        "peekOfCode": "router = DefaultRouter();\nrouter.register('products', views.ProductViewSet, basename='product')\nrouter.register('categories', views.CategoryViewSet, basename='category')\nurlpatterns = [\n    path('admin/', admin.site.urls),\n    path('__debug__/', include('debug_toolbar.urls')),\n    # path('', include('rest_framework.urls')),\n] + router.urls",
+        "peekOfCode": "router = DefaultRouter();\nrouter.register('products', views.ProductViewSet, basename='product')\nrouter.register('categories', views.CategoryViewSet, basename='category')\nrouter.register('carts', CartViewSet, basename='cart')\nurlpatterns = [\n    path('admin/', admin.site.urls),\n    path('__debug__/', include('debug_toolbar.urls')),\n    # path('', include('rest_framework.urls')),\n] + router.urls",
         "detail": "api.urls",
         "documentation": {}
     },
@@ -1024,7 +1056,7 @@
         "kind": 6,
         "importPath": "cart.models",
         "description": "cart.models",
-        "peekOfCode": "class Cart(models.Model):\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)\n    created_at = models.DateTimeField(auto_now_add=True)\n    def __str__(self):\n        return self.id\nclass CartItem(models.Model):\n    cart = models.ForeignKey(Cart, on_delete=models.CASCADE)\n    product = models.ForeignKey(Product, on_delete=models.PROTECT)\n    quantity = models.PositiveIntegerField(default=1)\n    created_at = models.DateTimeField(auto_now_add=True)",
+        "peekOfCode": "class Cart(models.Model):\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)\n    created_at = models.DateTimeField(auto_now_add=True)\n    def __str__(self):\n        return self.id\nclass CartItem(models.Model):\n    cart = models.ForeignKey(Cart, on_delete=models.CASCADE, related_name='items')\n    product = models.ForeignKey(Product, on_delete=models.PROTECT)\n    quantity = models.PositiveIntegerField(default=1)\n    created_at = models.DateTimeField(auto_now_add=True)",
         "detail": "cart.models",
         "documentation": {}
     },
@@ -1033,8 +1065,53 @@
         "kind": 6,
         "importPath": "cart.models",
         "description": "cart.models",
-        "peekOfCode": "class CartItem(models.Model):\n    cart = models.ForeignKey(Cart, on_delete=models.CASCADE)\n    product = models.ForeignKey(Product, on_delete=models.PROTECT)\n    quantity = models.PositiveIntegerField(default=1)\n    created_at = models.DateTimeField(auto_now_add=True)\n    def __str__(self):\n        return self.cart.id",
+        "peekOfCode": "class CartItem(models.Model):\n    cart = models.ForeignKey(Cart, on_delete=models.CASCADE, related_name='items')\n    product = models.ForeignKey(Product, on_delete=models.PROTECT)\n    quantity = models.PositiveIntegerField(default=1)\n    created_at = models.DateTimeField(auto_now_add=True)\n    def __str__(self):\n        return self.cart.id",
         "detail": "cart.models",
+        "documentation": {}
+    },
+    {
+        "label": "SimpleProductSerializer",
+        "kind": 6,
+        "importPath": "cart.serializers",
+        "description": "cart.serializers",
+        "peekOfCode": "class SimpleProductSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Product\n        fields = ['name', 'price']\nclass CartItemSerializer(serializers.ModelSerializer):\n    product = SimpleProductSerializer()  # Use a single product serializer, not many=True\n    total_price = serializers.SerializerMethodField()\n    def get_total_price(self, obj):\n        return obj.quantity * obj.product.price\n    class Meta:",
+        "detail": "cart.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "CartItemSerializer",
+        "kind": 6,
+        "importPath": "cart.serializers",
+        "description": "cart.serializers",
+        "peekOfCode": "class CartItemSerializer(serializers.ModelSerializer):\n    product = SimpleProductSerializer()  # Use a single product serializer, not many=True\n    total_price = serializers.SerializerMethodField()\n    def get_total_price(self, obj):\n        return obj.quantity * obj.product.price\n    class Meta:\n        model = CartItem\n        fields = ['id', 'product', 'quantity', 'total_price']\nclass CartSerializer(serializers.ModelSerializer):\n    items = CartItemSerializer(many=True, read_only=True)  # Use CartItemSerializer to serialize the related items",
+        "detail": "cart.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "CartSerializer",
+        "kind": 6,
+        "importPath": "cart.serializers",
+        "description": "cart.serializers",
+        "peekOfCode": "class CartSerializer(serializers.ModelSerializer):\n    items = CartItemSerializer(many=True, read_only=True)  # Use CartItemSerializer to serialize the related items\n    total_price = serializers.SerializerMethodField()\n    def get_total_price(self, obj):\n        return sum(item.product.price * item.quantity for item in obj.items.all())\n    class Meta:\n        model = Cart\n        fields = ['id', 'items', 'total_price']\nclass CreateCartSerializer(serializers.Serializer):\n    product_id = serializers.IntegerField()",
+        "detail": "cart.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "CreateCartSerializer",
+        "kind": 6,
+        "importPath": "cart.serializers",
+        "description": "cart.serializers",
+        "peekOfCode": "class CreateCartSerializer(serializers.Serializer):\n    product_id = serializers.IntegerField()\n    quantity = serializers.IntegerField()\n    def validate(self, data):\n        product_id = data['product_id']\n        quantity = data['quantity']\n        try:\n            product = Product.objects.get(pk=product_id)\n        except Product.DoesNotExist:\n            raise serializers.ValidationError('Product does not exist.')",
+        "detail": "cart.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "CartViewSet",
+        "kind": 6,
+        "importPath": "cart.views",
+        "description": "cart.views",
+        "peekOfCode": "class CartViewSet(ModelViewSet):\n    queryset = Cart.objects.all()\n    def get_serializer_class(self):\n        if self.action == 'create':\n            return CreateCartSerializer  # Rename CreateCartSerializer to CreateCartItemSerializer\n        return CartSerializer",
+        "detail": "cart.views",
         "documentation": {}
     },
     {
