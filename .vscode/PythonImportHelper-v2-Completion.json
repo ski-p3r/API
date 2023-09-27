@@ -41,6 +41,14 @@
         "documentation": {}
     },
     {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
         "label": "path",
         "importPath": "django.urls",
         "description": "django.urls",
@@ -57,11 +65,51 @@
         "documentation": {}
     },
     {
+        "label": "DefaultRouter",
+        "importPath": "rest_framework.routers",
+        "description": "rest_framework.routers",
+        "isExtraImport": true,
+        "detail": "rest_framework.routers",
+        "documentation": {}
+    },
+    {
         "label": "get_wsgi_application",
         "importPath": "django.core.wsgi",
         "description": "django.core.wsgi",
         "isExtraImport": true,
         "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
         "documentation": {}
     },
     {
@@ -236,11 +284,20 @@
         "documentation": {}
     },
     {
+        "label": "router",
+        "kind": 5,
+        "importPath": "api.urls",
+        "description": "api.urls",
+        "peekOfCode": "router = DefaultRouter();\nurlpatterns = [\n    path('admin/', admin.site.urls),\n    path('__debug__/', include('debug_toolbar.urls')),\n] + router.urls",
+        "detail": "api.urls",
+        "documentation": {}
+    },
+    {
         "label": "urlpatterns",
         "kind": 5,
         "importPath": "api.urls",
         "description": "api.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('__debug__/', include('debug_toolbar.urls')),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('__debug__/', include('debug_toolbar.urls')),\n] + router.urls",
         "detail": "api.urls",
         "documentation": {}
     },
@@ -251,6 +308,33 @@
         "description": "api.wsgi",
         "peekOfCode": "application = get_wsgi_application()",
         "detail": "api.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "ShopConfig",
+        "kind": 6,
+        "importPath": "shop.apps",
+        "description": "shop.apps",
+        "peekOfCode": "class ShopConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'shop'",
+        "detail": "shop.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Category",
+        "kind": 6,
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "peekOfCode": "class Category(models.Model):\n    name = models.CharField(max_length=100)\n    def __str__(self) -> str:\n        return self.name\nclass Product(models.Model):\n    name = models.CharField(max_length=100)\n    description = models.TextField()\n    price = models.DecimalField(max_digits=10, decimal_places=2)\n    category = models.ForeignKey(Category, on_delete=models.CASCADE, related_name='products')\n    def __str__(self) -> str:",
+        "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "Product",
+        "kind": 6,
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "peekOfCode": "class Product(models.Model):\n    name = models.CharField(max_length=100)\n    description = models.TextField()\n    price = models.DecimalField(max_digits=10, decimal_places=2)\n    category = models.ForeignKey(Category, on_delete=models.CASCADE, related_name='products')\n    def __str__(self) -> str:\n        return self.name",
+        "detail": "shop.models",
         "documentation": {}
     },
     {
