@@ -11,6 +11,7 @@ django-debug-toolbar = "*"
 psycopg2-binary = "*"
 markdown = "*"
 django-filter = "*"
+djangorestframework-recursive = "*"
 
 [dev-packages]
 

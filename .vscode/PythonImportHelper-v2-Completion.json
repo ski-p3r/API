@@ -73,11 +73,115 @@
         "documentation": {}
     },
     {
+        "label": "DefaultRouter",
+        "importPath": "rest_framework.routers",
+        "description": "rest_framework.routers",
+        "isExtraImport": true,
+        "detail": "rest_framework.routers",
+        "documentation": {}
+    },
+    {
         "label": "get_wsgi_application",
         "importPath": "django.core.wsgi",
         "description": "django.core.wsgi",
         "isExtraImport": true,
         "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
         "documentation": {}
     },
     {
@@ -122,6 +226,14 @@
         "documentation": {}
     },
     {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
         "label": "TestCase",
         "importPath": "django.test",
         "description": "django.test",
@@ -130,11 +242,19 @@
         "documentation": {}
     },
     {
-        "label": "render",
-        "importPath": "django.shortcuts",
-        "description": "django.shortcuts",
+        "label": "ModelViewSet",
+        "importPath": "rest_framework.viewsets",
+        "description": "rest_framework.viewsets",
         "isExtraImport": true,
-        "detail": "django.shortcuts",
+        "detail": "rest_framework.viewsets",
+        "documentation": {}
+    },
+    {
+        "label": "PageNumberPagination",
+        "importPath": "rest_framework.pagination",
+        "description": "rest_framework.pagination",
+        "isExtraImport": true,
+        "detail": "rest_framework.pagination",
         "documentation": {}
     },
     {
@@ -313,7 +433,7 @@
         "kind": 5,
         "importPath": "api.urls",
         "description": "api.urls",
-        "peekOfCode": "router = DefaultRouter();\nurlpatterns = [\n    path('admin/', admin.site.urls),\n    path('__debug__/', include('debug_toolbar.urls')),\n] + router.urls",
+        "peekOfCode": "router = DefaultRouter();\nurlpatterns = [\n    path('admin/', admin.site.urls),\n    path('__debug__/', include('debug_toolbar.urls')),\n    path('', include('shop.urls')),\n] + router.urls",
         "detail": "api.urls",
         "documentation": {}
     },
@@ -322,7 +442,7 @@
         "kind": 5,
         "importPath": "api.urls",
         "description": "api.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('__debug__/', include('debug_toolbar.urls')),\n] + router.urls",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('__debug__/', include('debug_toolbar.urls')),\n    path('', include('shop.urls')),\n] + router.urls",
         "detail": "api.urls",
         "documentation": {}
     },
@@ -345,6 +465,60 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "shop.migrations.0002_product_stock",
+        "description": "shop.migrations.0002_product_stock",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('shop', '0001_initial'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='product',\n            name='stock',\n            field=models.IntegerField(default=24),\n            preserve_default=False,",
+        "detail": "shop.migrations.0002_product_stock",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "shop.migrations.0003_category_parent",
+        "description": "shop.migrations.0003_category_parent",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('shop', '0002_product_stock'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='category',\n            name='parent',\n            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, to='shop.category'),\n        ),",
+        "detail": "shop.migrations.0003_category_parent",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "shop.migrations.0004_remove_category_parent_category_parent",
+        "description": "shop.migrations.0004_remove_category_parent_category_parent",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('shop', '0003_category_parent'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='category',\n            name='parent',\n        ),\n        migrations.AddField(",
+        "detail": "shop.migrations.0004_remove_category_parent_category_parent",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "shop.migrations.0005_remove_product_category_product_category",
+        "description": "shop.migrations.0005_remove_product_category_product_category",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('shop', '0004_remove_category_parent_category_parent'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='product',\n            name='category',\n        ),\n        migrations.AddField(",
+        "detail": "shop.migrations.0005_remove_product_category_product_category",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "shop.migrations.0006_remove_product_category_product_category",
+        "description": "shop.migrations.0006_remove_product_category_product_category",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('shop', '0005_remove_product_category_product_category'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='product',\n            name='category',\n        ),\n        migrations.AddField(",
+        "detail": "shop.migrations.0006_remove_product_category_product_category",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "shop.migrations.0007_remove_category_parent_category_parent",
+        "description": "shop.migrations.0007_remove_category_parent_category_parent",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('shop', '0006_remove_product_category_product_category'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='category',\n            name='parent',\n        ),\n        migrations.AddField(",
+        "detail": "shop.migrations.0007_remove_category_parent_category_parent",
+        "documentation": {}
+    },
+    {
         "label": "ShopConfig",
         "kind": 6,
         "importPath": "shop.apps",
@@ -358,7 +532,7 @@
         "kind": 6,
         "importPath": "shop.models",
         "description": "shop.models",
-        "peekOfCode": "class Category(models.Model):\n    name = models.CharField(max_length=100)\n    def __str__(self) -> str:\n        return self.name\nclass Product(models.Model):\n    name = models.CharField(max_length=100)\n    description = models.TextField()\n    price = models.DecimalField(max_digits=10, decimal_places=2)\n    category = models.ForeignKey(Category, on_delete=models.CASCADE, related_name='products')\n    def __str__(self) -> str:",
+        "peekOfCode": "class Category(models.Model):\n    name = models.CharField(max_length=100)\n    parent = models.ForeignKey('self', null=True, blank=True, on_delete=models.CASCADE, related_name='child')\n    def __str__(self):\n        return self.name\nclass Product(models.Model):\n    name = models.CharField(max_length=100)\n    description = models.TextField()\n    price = models.DecimalField(max_digits=10, decimal_places=2)\n    category = models.ForeignKey(Category, on_delete=models.CASCADE, related_name='products')",
         "detail": "shop.models",
         "documentation": {}
     },
@@ -367,8 +541,89 @@
         "kind": 6,
         "importPath": "shop.models",
         "description": "shop.models",
-        "peekOfCode": "class Product(models.Model):\n    name = models.CharField(max_length=100)\n    description = models.TextField()\n    price = models.DecimalField(max_digits=10, decimal_places=2)\n    category = models.ForeignKey(Category, on_delete=models.CASCADE, related_name='products')\n    def __str__(self) -> str:\n        return self.name",
+        "peekOfCode": "class Product(models.Model):\n    name = models.CharField(max_length=100)\n    description = models.TextField()\n    price = models.DecimalField(max_digits=10, decimal_places=2)\n    category = models.ForeignKey(Category, on_delete=models.CASCADE, related_name='products')\n    stock = models.IntegerField()\n    def __str__(self):\n        return self.name",
         "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "CategorySerializer",
+        "kind": 6,
+        "importPath": "shop.serializers",
+        "description": "shop.serializers",
+        "peekOfCode": "class CategorySerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Category\n        fields = ['id', 'name', 'parent']\nclass RecursiveCategorySerializer(serializers.Serializer):\n    def to_representation(self, instance):\n        serializer = self.parent.parent.__class__(instance, context=self.context)\n        return serializer.data\nclass GetCategorySerializer(serializers.ModelSerializer):\n    child = RecursiveCategorySerializer(many=True, read_only=True)",
+        "detail": "shop.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "RecursiveCategorySerializer",
+        "kind": 6,
+        "importPath": "shop.serializers",
+        "description": "shop.serializers",
+        "peekOfCode": "class RecursiveCategorySerializer(serializers.Serializer):\n    def to_representation(self, instance):\n        serializer = self.parent.parent.__class__(instance, context=self.context)\n        return serializer.data\nclass GetCategorySerializer(serializers.ModelSerializer):\n    child = RecursiveCategorySerializer(many=True, read_only=True)\n    class Meta:\n        model = Category\n        fields = ['id', 'name', 'child']\n    def to_representation(self, instance):",
+        "detail": "shop.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "GetCategorySerializer",
+        "kind": 6,
+        "importPath": "shop.serializers",
+        "description": "shop.serializers",
+        "peekOfCode": "class GetCategorySerializer(serializers.ModelSerializer):\n    child = RecursiveCategorySerializer(many=True, read_only=True)\n    class Meta:\n        model = Category\n        fields = ['id', 'name', 'child']\n    def to_representation(self, instance):\n        data = super().to_representation(instance)\n        children = instance.child.all()\n        if not children:\n            data.pop('child')",
+        "detail": "shop.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "ProductSerializer",
+        "kind": 6,
+        "importPath": "shop.serializers",
+        "description": "shop.serializers",
+        "peekOfCode": "class ProductSerializer(serializers.ModelSerializer):\n    category = GetCategorySerializer()\n    class Meta:\n        model = Product\n        fields = ['id', 'name', 'description', 'price', 'stock', 'category']\nclass CreateProductSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Product\n        fields = ['id', 'name', 'description', 'price', 'stock', 'category']",
+        "detail": "shop.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "CreateProductSerializer",
+        "kind": 6,
+        "importPath": "shop.serializers",
+        "description": "shop.serializers",
+        "peekOfCode": "class CreateProductSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Product\n        fields = ['id', 'name', 'description', 'price', 'stock', 'category']",
+        "detail": "shop.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "shop.urls",
+        "description": "shop.urls",
+        "peekOfCode": "urlpatterns = router.urls",
+        "detail": "shop.urls",
+        "documentation": {}
+    },
+    {
+        "label": "PageForCategory",
+        "kind": 6,
+        "importPath": "shop.views",
+        "description": "shop.views",
+        "peekOfCode": "class PageForCategory(PageNumberPagination):\n    page_size = 1\n    page_size_query_param = 'page_size'\nclass CategoryViewSet(ModelViewSet):\n    queryset = Category.objects.select_related('parent').filter(parent=None)\n    pagination_class = PageForCategory \n    def get_serializer_class(self):\n        if self.action == 'create':\n            return CategorySerializer\n        elif self.action == 'list' or self.action == 'retrieve':",
+        "detail": "shop.views",
+        "documentation": {}
+    },
+    {
+        "label": "CategoryViewSet",
+        "kind": 6,
+        "importPath": "shop.views",
+        "description": "shop.views",
+        "peekOfCode": "class CategoryViewSet(ModelViewSet):\n    queryset = Category.objects.select_related('parent').filter(parent=None)\n    pagination_class = PageForCategory \n    def get_serializer_class(self):\n        if self.action == 'create':\n            return CategorySerializer\n        elif self.action == 'list' or self.action == 'retrieve':\n            return GetCategorySerializer\n        return CategorySerializer\nclass ProductViewSet(ModelViewSet):",
+        "detail": "shop.views",
+        "documentation": {}
+    },
+    {
+        "label": "ProductViewSet",
+        "kind": 6,
+        "importPath": "shop.views",
+        "description": "shop.views",
+        "peekOfCode": "class ProductViewSet(ModelViewSet):\n    queryset = Product.objects.all()\n    serializer_class = ProductSerializer",
+        "detail": "shop.views",
         "documentation": {}
     },
     {
