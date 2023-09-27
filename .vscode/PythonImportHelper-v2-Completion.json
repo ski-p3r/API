@@ -201,7 +201,31 @@
         "documentation": {}
     },
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "transaction",
         "importPath": "django.db",
         "description": "django.db",
         "isExtraImport": true,
@@ -234,11 +258,59 @@
         "documentation": {}
     },
     {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
         "label": "TestCase",
         "importPath": "django.test",
         "description": "django.test",
         "isExtraImport": true,
         "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "CharFilter",
+        "importPath": "django_filters.rest_framework",
+        "description": "django_filters.rest_framework",
+        "isExtraImport": true,
+        "detail": "django_filters.rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "DjangoFilterBackend",
+        "importPath": "django_filters.rest_framework",
+        "description": "django_filters.rest_framework",
+        "isExtraImport": true,
+        "detail": "django_filters.rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "FilterSet",
+        "importPath": "django_filters.rest_framework",
+        "description": "django_filters.rest_framework",
+        "isExtraImport": true,
+        "detail": "django_filters.rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "NumberFilter",
+        "importPath": "django_filters.rest_framework",
+        "description": "django_filters.rest_framework",
+        "isExtraImport": true,
+        "detail": "django_filters.rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "SearchFilter",
+        "importPath": "rest_framework.filters",
+        "description": "rest_framework.filters",
+        "isExtraImport": true,
+        "detail": "rest_framework.filters",
         "documentation": {}
     },
     {
@@ -258,12 +330,69 @@
         "documentation": {}
     },
     {
+        "label": "BasePermission",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
+        "isExtraImport": true,
+        "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "IsAdminUser",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
+        "isExtraImport": true,
+        "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "SAFE_METHODS",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
+        "isExtraImport": true,
+        "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
+        "isExtraImport": true,
+        "detail": "rest_framework.response",
+        "documentation": {}
+    },
+    {
         "label": "sys",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "sys",
         "description": "sys",
         "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "django",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django",
+        "description": "django",
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "Category",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
+        "documentation": {}
+    },
+    {
+        "label": "Product",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
         "documentation": {}
     },
     {
@@ -433,7 +562,7 @@
         "kind": 5,
         "importPath": "api.urls",
         "description": "api.urls",
-        "peekOfCode": "router = DefaultRouter();\nurlpatterns = [\n    path('admin/', admin.site.urls),\n    path('__debug__/', include('debug_toolbar.urls')),\n    path('', include('shop.urls')),\n] + router.urls",
+        "peekOfCode": "router = DefaultRouter();\nurlpatterns = [\n    path('admin/', admin.site.urls),\n    path('__debug__/', include('debug_toolbar.urls')),\n    # path('', include('rest_framework.urls')),\n    path('', include('shop.urls')),\n] + router.urls",
         "detail": "api.urls",
         "documentation": {}
     },
@@ -442,7 +571,7 @@
         "kind": 5,
         "importPath": "api.urls",
         "description": "api.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('__debug__/', include('debug_toolbar.urls')),\n    path('', include('shop.urls')),\n] + router.urls",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('__debug__/', include('debug_toolbar.urls')),\n    # path('', include('rest_framework.urls')),\n    path('', include('shop.urls')),\n] + router.urls",
         "detail": "api.urls",
         "documentation": {}
     },
@@ -516,6 +645,15 @@
         "description": "shop.migrations.0007_remove_category_parent_category_parent",
         "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('shop', '0006_remove_product_category_product_category'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='category',\n            name='parent',\n        ),\n        migrations.AddField(",
         "detail": "shop.migrations.0007_remove_category_parent_category_parent",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "shop.migrations.0008_alter_category_parent",
+        "description": "shop.migrations.0008_alter_category_parent",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('shop', '0007_remove_category_parent_category_parent'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='category',\n            name='parent',\n            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, related_name='child', to='shop.category'),\n        ),",
+        "detail": "shop.migrations.0008_alter_category_parent",
         "documentation": {}
     },
     {
@@ -600,11 +738,29 @@
         "documentation": {}
     },
     {
+        "label": "ProductFilter",
+        "kind": 6,
+        "importPath": "shop.views",
+        "description": "shop.views",
+        "peekOfCode": "class ProductFilter(FilterSet):\n    min_price = NumberFilter(field_name='price', lookup_expr='gte')\n    max_price = NumberFilter(field_name='price', lookup_expr='lte')\n    class Meta:\n        model = Product\n        fields = ['min_price', 'max_price']\nclass PageForCategory(PageNumberPagination):\n    page_size = 20\n    page_size_query_param = 'page_size'\nclass ReadOnly(BasePermission):",
+        "detail": "shop.views",
+        "documentation": {}
+    },
+    {
         "label": "PageForCategory",
         "kind": 6,
         "importPath": "shop.views",
         "description": "shop.views",
-        "peekOfCode": "class PageForCategory(PageNumberPagination):\n    page_size = 1\n    page_size_query_param = 'page_size'\nclass CategoryViewSet(ModelViewSet):\n    queryset = Category.objects.select_related('parent').filter(parent=None)\n    pagination_class = PageForCategory \n    def get_serializer_class(self):\n        if self.action == 'create':\n            return CategorySerializer\n        elif self.action == 'list' or self.action == 'retrieve':",
+        "peekOfCode": "class PageForCategory(PageNumberPagination):\n    page_size = 20\n    page_size_query_param = 'page_size'\nclass ReadOnly(BasePermission):\n    def has_permission(self, request, view):\n        return request.method in SAFE_METHODS\nclass CategoryViewSet(ModelViewSet):\n    queryset = Category.objects.select_related('parent').filter(parent=None)\n    pagination_class = PageForCategory\n    filter_backends = (DjangoFilterBackend,)",
+        "detail": "shop.views",
+        "documentation": {}
+    },
+    {
+        "label": "ReadOnly",
+        "kind": 6,
+        "importPath": "shop.views",
+        "description": "shop.views",
+        "peekOfCode": "class ReadOnly(BasePermission):\n    def has_permission(self, request, view):\n        return request.method in SAFE_METHODS\nclass CategoryViewSet(ModelViewSet):\n    queryset = Category.objects.select_related('parent').filter(parent=None)\n    pagination_class = PageForCategory\n    filter_backends = (DjangoFilterBackend,)\n    filterset_fields = ('name',)  # Should be ('name',)\n    def get_serializer_class(self):\n        if self.action == 'create':",
         "detail": "shop.views",
         "documentation": {}
     },
@@ -613,7 +769,7 @@
         "kind": 6,
         "importPath": "shop.views",
         "description": "shop.views",
-        "peekOfCode": "class CategoryViewSet(ModelViewSet):\n    queryset = Category.objects.select_related('parent').filter(parent=None)\n    pagination_class = PageForCategory \n    def get_serializer_class(self):\n        if self.action == 'create':\n            return CategorySerializer\n        elif self.action == 'list' or self.action == 'retrieve':\n            return GetCategorySerializer\n        return CategorySerializer\nclass ProductViewSet(ModelViewSet):",
+        "peekOfCode": "class CategoryViewSet(ModelViewSet):\n    queryset = Category.objects.select_related('parent').filter(parent=None)\n    pagination_class = PageForCategory\n    filter_backends = (DjangoFilterBackend,)\n    filterset_fields = ('name',)  # Should be ('name',)\n    def get_serializer_class(self):\n        if self.action == 'create':\n            return CategorySerializer\n        elif self.action == 'list' or self.action == 'retrieve':\n            return GetCategorySerializer",
         "detail": "shop.views",
         "documentation": {}
     },
@@ -622,7 +778,7 @@
         "kind": 6,
         "importPath": "shop.views",
         "description": "shop.views",
-        "peekOfCode": "class ProductViewSet(ModelViewSet):\n    queryset = Product.objects.all()\n    serializer_class = ProductSerializer",
+        "peekOfCode": "class ProductViewSet(ModelViewSet):\n    queryset = Product.objects.all()\n    pagination_class = PageForCategory\n    filter_backends = (DjangoFilterBackend,SearchFilter)\n    search_fields = ['name', 'description']\n    filterset_class = ProductFilter\n    permission_classes = [IsAdminUser|ReadOnly]\n    def get_serializer_context(self):\n        return {'user': self.request.user}\n    def get_serializer_class(self):",
         "detail": "shop.views",
         "documentation": {}
     },
@@ -633,6 +789,15 @@
         "description": "manage",
         "peekOfCode": "def main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'api.settings')\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"",
         "detail": "manage",
+        "documentation": {}
+    },
+    {
+        "label": "seed_data",
+        "kind": 2,
+        "importPath": "seed",
+        "description": "seed",
+        "peekOfCode": "def seed_data():\n    products = [\n            {\n                'name': 'Samsung Galaxy S21',\n                'description': 'High-end Samsung smartphone with a stunning display.',\n                'price': 799.99,\n                'stock': 50,\n                'category': 'Smartphones'\n            },\n            {",
+        "detail": "seed",
         "documentation": {}
     }
 ]

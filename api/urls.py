@@ -23,5 +23,6 @@ router = DefaultRouter();
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('__debug__/', include('debug_toolbar.urls')),
+    # path('', include('rest_framework.urls')),
     path('', include('shop.urls')),
 ] + router.urls
