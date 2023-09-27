@@ -5,6 +5,10 @@ name = "pypi"
 
 [packages]
 python-decouple = "*"
+django = "*"
+djangorestframework = "*"
+django-debug-toolbar = "*"
+psycopg2-binary = "*"
 
 [dev-packages]
 
