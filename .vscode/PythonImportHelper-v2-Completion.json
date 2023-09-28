@@ -667,6 +667,14 @@
         "documentation": {}
     },
     {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
         "label": "status",
         "importPath": "rest_framework",
         "description": "rest_framework",
