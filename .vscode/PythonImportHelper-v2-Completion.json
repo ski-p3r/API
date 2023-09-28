@@ -153,6 +153,30 @@
         "documentation": {}
     },
     {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "migrations",
         "importPath": "django.db",
         "description": "django.db",
@@ -755,6 +779,22 @@
         "documentation": {}
     },
     {
+        "label": "Cart",
+        "importPath": "cart.models",
+        "description": "cart.models",
+        "isExtraImport": true,
+        "detail": "cart.models",
+        "documentation": {}
+    },
+    {
+        "label": "CartItem",
+        "importPath": "cart.models",
+        "description": "cart.models",
+        "isExtraImport": true,
+        "detail": "cart.models",
+        "documentation": {}
+    },
+    {
         "label": "render",
         "importPath": "django.shortcuts",
         "description": "django.shortcuts",
@@ -1144,12 +1184,39 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "order.migrations.0001_initial",
+        "description": "order.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        ('cart', '0002_remove_cart_cookie_remove_cart_user'),\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Order',\n            fields=[",
+        "detail": "order.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
         "label": "OrderConfig",
         "kind": 6,
         "importPath": "order.apps",
         "description": "order.apps",
         "peekOfCode": "class OrderConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'order'",
         "detail": "order.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Order",
+        "kind": 6,
+        "importPath": "order.models",
+        "description": "order.models",
+        "peekOfCode": "class Order(models.Model):\n    PENDING='P'\n    SHIPPED='S'\n    DELIVERED='D'\n    STATUS_CHOICE = [\n        (PENDING, 'PENDING'),\n        (SHIPPED, 'SHIPPED'),\n        (DELIVERED, 'DELIVERED'),\n    ]\n    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)",
+        "detail": "order.models",
+        "documentation": {}
+    },
+    {
+        "label": "OrderItem",
+        "kind": 6,
+        "importPath": "order.models",
+        "description": "order.models",
+        "peekOfCode": "class OrderItem(models.Model):\n    order = models.ForeignKey(Order, on_delete=models.CASCADE, related_name='order_items')\n    cart_item = models.ForeignKey(CartItem, on_delete=models.PROTECT, related_name='items')\n    def __str__(self):\n        return str(self.order.id)",
+        "detail": "order.models",
         "documentation": {}
     },
     {
