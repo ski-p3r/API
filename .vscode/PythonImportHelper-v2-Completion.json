@@ -57,6 +57,14 @@
         "documentation": {}
     },
     {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
         "label": "path",
         "importPath": "django.urls",
         "description": "django.urls",
@@ -162,6 +170,14 @@
     },
     {
         "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
         "importPath": "django.db",
         "description": "django.db",
         "isExtraImport": true,
@@ -296,6 +312,14 @@
         "importPath": "uuid",
         "description": "uuid",
         "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
         "documentation": {}
     },
     {
@@ -659,6 +683,14 @@
         "documentation": {}
     },
     {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
         "label": "CreateModelMixin",
         "importPath": "rest_framework.mixins",
         "description": "rest_framework.mixins",
@@ -720,6 +752,14 @@
         "description": "rest_framework.viewsets",
         "isExtraImport": true,
         "detail": "rest_framework.viewsets",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
         "documentation": {}
     },
     {
@@ -1101,6 +1141,15 @@
         "description": "cart.views",
         "peekOfCode": "class CartItemViewSet(ModelViewSet):\n    def get_serializer_class(self):\n        if self.action == 'create':\n            return CreateCartItemSerializer\n        elif self.action == 'update':\n            return UpdateCartItemSerializer\n        return CartItemSerializer\n    def get_queryset(self):\n        cart_pk = self.kwargs.get('cart_pk')\n        try:",
         "detail": "cart.views",
+        "documentation": {}
+    },
+    {
+        "label": "OrderConfig",
+        "kind": 6,
+        "importPath": "order.apps",
+        "description": "order.apps",
+        "peekOfCode": "class OrderConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'order'",
+        "detail": "order.apps",
         "documentation": {}
     },
     {
