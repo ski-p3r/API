@@ -13,6 +13,7 @@ markdown = "*"
 django-filter = "*"
 djangorestframework-recursive = "*"
 python-dotenv = "*"
+drf-nested-routers = "*"
 
 [dev-packages]
 

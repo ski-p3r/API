@@ -1,38 +1,32 @@
-from django_filters.rest_framework import CharFilter, DjangoFilterBackend, FilterSet, NumberFilter
+from django_filters import rest_framework as filters
 from rest_framework import status
 from rest_framework.filters import SearchFilter
 from rest_framework.viewsets import ModelViewSet
-from rest_framework.pagination import PageNumberPagination
 from rest_framework.permissions import BasePermission, IsAdminUser, SAFE_METHODS
 from rest_framework.response import Response
 from .models import Category, Product
 from .serializers import CategorySerializer, CreateProductSerializer, GetCategorySerializer, ProductSerializer
 
-class ProductFilter(FilterSet):
-    min_price = NumberFilter(field_name='price', lookup_expr='gte')
-    max_price = NumberFilter(field_name='price', lookup_expr='lte')
-
-    class Meta:
-        model = Product
-        fields = ['category', 'min_price', 'max_price']
-
-class PageForCategory(PageNumberPagination):
-    page_size = 20
-    page_size_query_param = 'page_size'
-
 class ReadOnly(BasePermission):
     def has_permission(self, request, view):
         return request.method in SAFE_METHODS
 
+class ProductFilter(filters.FilterSet):
+    min_price = filters.NumberFilter(field_name='price', lookup_expr='gte')
+    max_price = filters.NumberFilter(field_name='price', lookup_expr='lte')
+    category_name = filters.CharFilter(method='filter_category_name')
+
+    class Meta:
+        model = Product
+        fields = ['min_price', 'max_price']
+
+    def filter_category_name(self, queryset, name, value):
+        return queryset.filter(category__name__icontains=value)
+
 class CategoryViewSet(ModelViewSet):
     queryset = Category.objects.select_related('parent').filter(parent=None)
-    pagination_class = PageForCategory
-    filter_backends = (DjangoFilterBackend,)
-    filterset_fields = ('category',)
-    from decouple import config
-
-    print("DB_NAME:", config('DB_NAME'))
-
+    serializer_class = GetCategorySerializer
+    permission_classes = [IsAdminUser | ReadOnly]
 
     def get_serializer_class(self):
         if self.action == 'create':
@@ -41,19 +35,24 @@ class CategoryViewSet(ModelViewSet):
             return GetCategorySerializer
         return CategorySerializer
 
+    def perform_create(self, serializer):
+        serializer.save()
+
+    def perform_update(self, serializer):
+        serializer.save()
+
 class ProductViewSet(ModelViewSet):
     queryset = Product.objects.all()
-    pagination_class = PageForCategory
-    filter_backends = (DjangoFilterBackend,SearchFilter)
-    search_fields = ['name', 'description']
+    serializer_class = ProductSerializer
+    filter_backends = (filters.DjangoFilterBackend, SearchFilter)
     filterset_class = ProductFilter
-    permission_classes = [IsAdminUser|ReadOnly]
+    search_fields = ['name', 'description']
+    permission_classes = [IsAdminUser | ReadOnly]
 
-    def get_serializer_context(self):
-        return {'user': self.request.user}
+    def perform_create(self, serializer):
+        serializer.save()
 
-    def get_serializer_class(self):
-        # if self.request.user.is_staff:
-        if self.action == 'create':
-                return CreateProductSerializer
-        return ProductSerializer
+    def perform_update(self, serializer):
+        serializer.save()
+
+

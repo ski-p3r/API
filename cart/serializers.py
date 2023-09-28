@@ -1,6 +1,6 @@
 from rest_framework import serializers
-from .models import Cart, CartItem
 from shop.models import Product
+from .models import Cart, CartItem
 
 class SimpleProductSerializer(serializers.ModelSerializer):
     class Meta:
@@ -8,62 +8,93 @@ class SimpleProductSerializer(serializers.ModelSerializer):
         fields = ['name', 'price']
 
 class CartItemSerializer(serializers.ModelSerializer):
-    product = SimpleProductSerializer()  # Use a single product serializer, not many=True
-    total_price = serializers.SerializerMethodField()
+    product = SimpleProductSerializer()
+    total = serializers.SerializerMethodField()
 
-    def get_total_price(self, obj):
-        return obj.quantity * obj.product.price
-    
     class Meta:
         model = CartItem
-        fields = ['id', 'product', 'quantity', 'total_price']
+        fields = ['id', 'product', 'quantity', 'total']
+
+    def get_total(self, obj):
+        return obj.product.price * obj.quantity
 
 class CartSerializer(serializers.ModelSerializer):
-    items = CartItemSerializer(many=True, read_only=True)  # Use CartItemSerializer to serialize the related items
+    items = CartItemSerializer(many=True)
     total_price = serializers.SerializerMethodField()
+
+    class Meta:
+        model = Cart
+        fields = ['items', 'total_price']
 
     def get_total_price(self, obj):
         return sum(item.product.price * item.quantity for item in obj.items.all())
 
+class CartCreateSerializer(serializers.ModelSerializer):
+    id = serializers.UUIDField(read_only=True)
+    items = CartItemSerializer(many=True, read_only=True)
+
     class Meta:
         model = Cart
-        fields = ['id', 'items', 'total_price']
+        fields = ['id', 'items']
 
-class CreateCartSerializer(serializers.Serializer):
-    product_id = serializers.IntegerField()
+class CreateCartItemSerializer(serializers.ModelSerializer):
     quantity = serializers.IntegerField()
 
-    def validate(self, data):
-        product_id = data['product_id']
-        quantity = data['quantity']
+    class Meta:
+        model = CartItem
+        fields = ['product', 'quantity']
 
+    def validate_quantity(self, value):
+        if value <= 0:
+            raise serializers.ValidationError("The quantity must be a positive integer.")
+        return value
+
+    def create(self, validated_data):
+        cart_pk = self.context['cart_pk']
+        product = validated_data['product']
+        quantity = validated_data['quantity']
+
+        # Check if the cart item already exists
         try:
-            product = Product.objects.get(pk=product_id)
-        except Product.DoesNotExist:
-            raise serializers.ValidationError('Product does not exist.')
-
-        if quantity <= 0:
-            raise serializers.ValidationError('Quantity should be greater than zero.')
-
-        if quantity > product.stock:
-            raise serializers.ValidationError('Not enough stock available.')
-
-        return data
-
-    def save(self, **kwargs):
-        product_id = self.validated_data['product_id']
-        quantity = self.validated_data['quantity']
-
-        # Create a new cart if it doesn't exist
-        cart, created = Cart.objects.get_or_create()
-
-        try:
-            cart_item = CartItem.objects.get(cart=cart, product_id=product_id)
+            cart_item = CartItem.objects.get(cart_id=cart_pk, product=product)
             cart_item.quantity += quantity
-            if cart_item.quantity > Product.objects.get(pk=product_id).stock:
-                raise serializers.ValidationError('Not enough stock available.')
-            cart_item.save()
+            if cart_item.quantity < 1:
+                cart_item.delete()
+            else:
+                cart_item.save()
         except CartItem.DoesNotExist:
-            cart_item = CartItem.objects.create(cart=cart, product_id=product_id, quantity=quantity)
+            # If it doesn't exist, create a new cart item
+            cart_item = CartItem.objects.create(cart_id=cart_pk, **validated_data)
+
+        # Update the product stock
+        product.stock -= quantity
+        product.save()
 
         return cart_item
+
+class UpdateCartItemSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = CartItem
+        fields = ['quantity']
+
+    def validate_quantity(self, value):
+        if value <= 0:
+            raise serializers.ValidationError("The quantity must be a positive integer.")
+        return value
+
+    def update(self, instance, validated_data):
+        # Calculate the change in quantity
+        old_quantity = instance.quantity
+        new_quantity = validated_data.get('quantity', old_quantity)
+
+        # Update the quantity field
+        instance.quantity = new_quantity
+        instance.save()
+
+        # Update the related product's stock
+        product = instance.product
+        product.stock += old_quantity  # Revert old quantity
+        product.stock -= new_quantity  # Apply new quantity
+        product.save()
+
+        return instance

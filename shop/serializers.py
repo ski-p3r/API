@@ -10,14 +10,14 @@ class RecursiveCategorySerializer(serializers.Serializer):
     def to_representation(self, instance):
         serializer = self.parent.parent.__class__(instance, context=self.context)
         return serializer.data
-    
+
 class GetCategorySerializer(serializers.ModelSerializer):
-    child = RecursiveCategorySerializer(many=True, read_only=True)
+    children = RecursiveCategorySerializer(many=True, read_only=True)
     product_count = serializers.SerializerMethodField()
 
     class Meta:
         model = Category
-        fields = ['id', 'name', 'child', 'product_count']
+        fields = ['id', 'name', 'children', 'product_count']
 
     def get_product_count(self, instance):
         # Count the number of products related to this category
@@ -25,15 +25,15 @@ class GetCategorySerializer(serializers.ModelSerializer):
 
     def to_representation(self, instance):
         data = super().to_representation(instance)
-        children = instance.child.all()
+        children = instance.children.all()
 
         if not children:
-            data.pop('child')
+            data.pop('children')
         else:
             # Count the number of products for all child categories
             child_product_count = sum(child.products.count() for child in children)
             data['product_count'] += child_product_count
-        
+
         return data
 
 class SimpleCategorySerializer(serializers.ModelSerializer):
@@ -52,3 +52,8 @@ class CreateProductSerializer(serializers.ModelSerializer):
     class Meta:
         model = Product
         fields = ['id', 'name', 'description', 'price', 'stock', 'category']
+
+class SimpleProductSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Product
+        fields = ['name', 'price']

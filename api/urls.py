@@ -17,18 +17,21 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
+from rest_framework_nested import routers
 from shop import views
-from cart.views import CartViewSet
+from cart.views import CartItemViewSet, CartViewSet
 
 
 
-router = DefaultRouter();
+router = routers.DefaultRouter()
 router.register('products', views.ProductViewSet, basename='product')
 router.register('categories', views.CategoryViewSet, basename='category')
 router.register('carts', CartViewSet, basename='cart')
+cart_router = routers.NestedDefaultRouter(router, 'carts', lookup='cart')
+cart_router.register('items', CartItemViewSet, basename='cart-items')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('__debug__/', include('debug_toolbar.urls')),
     # path('', include('rest_framework.urls')),
-] + router.urls
+] + router.urls + cart_router.urls
