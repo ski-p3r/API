@@ -1,6 +1,7 @@
 import uuid
 from django.db import models
-from cart.models import Cart, CartItem
+from cart.models import Cart
+from shop.models import Product
 
 # Create your models here.
 
@@ -26,7 +27,8 @@ class Order(models.Model):
     
 class OrderItem(models.Model):
     order = models.ForeignKey(Order, on_delete=models.CASCADE, related_name='order_items')
-    cart_item = models.ForeignKey(CartItem, on_delete=models.PROTECT, related_name='items')
+    product = models.ForeignKey(Product, on_delete=models.PROTECT, related_name='items')
+    quantity = models.PositiveIntegerField()
 
     def __str__(self):
         return str(self.order.id)

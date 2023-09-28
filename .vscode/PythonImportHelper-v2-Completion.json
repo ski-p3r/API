@@ -137,6 +137,14 @@
         "documentation": {}
     },
     {
+        "label": "views",
+        "importPath": "order",
+        "description": "order",
+        "isExtraImport": true,
+        "detail": "order",
+        "documentation": {}
+    },
+    {
         "label": "get_wsgi_application",
         "importPath": "django.core.wsgi",
         "description": "django.core.wsgi",
@@ -209,7 +217,31 @@
         "documentation": {}
     },
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "transaction",
         "importPath": "django.db",
         "description": "django.db",
         "isExtraImport": true,
@@ -368,6 +400,14 @@
         "description": "django.contrib.auth.models",
         "isExtraImport": true,
         "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "Product",
+        "importPath": "shop.models",
+        "description": "shop.models",
+        "isExtraImport": true,
+        "detail": "shop.models",
         "documentation": {}
     },
     {
@@ -787,6 +827,14 @@
         "documentation": {}
     },
     {
+        "label": "ModelViewSet",
+        "importPath": "rest_framework.viewsets",
+        "description": "rest_framework.viewsets",
+        "isExtraImport": true,
+        "detail": "rest_framework.viewsets",
+        "documentation": {}
+    },
+    {
         "label": "Cart",
         "importPath": "cart.models",
         "description": "cart.models",
@@ -803,35 +851,19 @@
         "documentation": {}
     },
     {
-        "label": "render",
-        "importPath": "django.shortcuts",
-        "description": "django.shortcuts",
+        "label": "SimpleProductSerializer",
+        "importPath": "cart.serializers",
+        "description": "cart.serializers",
         "isExtraImport": true,
-        "detail": "django.shortcuts",
+        "detail": "cart.serializers",
         "documentation": {}
     },
     {
-        "label": "ProductViewSet",
-        "importPath": "shop.views",
-        "description": "shop.views",
+        "label": "IsAuthenticated",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
         "isExtraImport": true,
-        "detail": "shop.views",
-        "documentation": {}
-    },
-    {
-        "label": "rest_framework",
-        "importPath": "django_filters",
-        "description": "django_filters",
-        "isExtraImport": true,
-        "detail": "django_filters",
-        "documentation": {}
-    },
-    {
-        "label": "SearchFilter",
-        "importPath": "rest_framework.filters",
-        "description": "rest_framework.filters",
-        "isExtraImport": true,
-        "detail": "rest_framework.filters",
+        "detail": "rest_framework.permissions",
         "documentation": {}
     },
     {
@@ -859,6 +891,30 @@
         "documentation": {}
     },
     {
+        "label": "ProductViewSet",
+        "importPath": "shop.views",
+        "description": "shop.views",
+        "isExtraImport": true,
+        "detail": "shop.views",
+        "documentation": {}
+    },
+    {
+        "label": "rest_framework",
+        "importPath": "django_filters",
+        "description": "django_filters",
+        "isExtraImport": true,
+        "detail": "django_filters",
+        "documentation": {}
+    },
+    {
+        "label": "SearchFilter",
+        "importPath": "rest_framework.filters",
+        "description": "rest_framework.filters",
+        "isExtraImport": true,
+        "detail": "rest_framework.filters",
+        "documentation": {}
+    },
+    {
         "label": "django",
         "kind": 6,
         "isExtraImport": true,
@@ -874,6 +930,32 @@
         "importPath": "sys",
         "description": "sys",
         "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "string",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "string",
+        "description": "string",
+        "detail": "string",
+        "documentation": {}
+    },
+    {
+        "label": "Chapa",
+        "importPath": "chapa",
+        "description": "chapa",
+        "isExtraImport": true,
+        "detail": "chapa",
         "documentation": {}
     },
     {
@@ -1043,7 +1125,7 @@
         "kind": 5,
         "importPath": "api.urls",
         "description": "api.urls",
-        "peekOfCode": "router = routers.DefaultRouter()\nrouter.register('products', views.ProductViewSet, basename='product')\nrouter.register('categories', views.CategoryViewSet, basename='category')\nrouter.register('carts', CartViewSet, basename='cart')\ncart_router = routers.NestedDefaultRouter(router, 'carts', lookup='cart')\ncart_router.register('items', CartItemViewSet, basename='cart-items')\nurlpatterns = [\n    path('admin/', admin.site.urls),\n    path('__debug__/', include('debug_toolbar.urls')),\n    # path('', include('rest_framework.urls')),",
+        "peekOfCode": "router = routers.DefaultRouter()\nrouter.register('products', views.ProductViewSet, basename='product')\nrouter.register('categories', views.CategoryViewSet, basename='category')\nrouter.register('carts', CartViewSet, basename='cart')\ncart_router = routers.NestedDefaultRouter(router, 'carts', lookup='cart')\ncart_router.register('items', CartItemViewSet, basename='cart-items')\nrouter.register('order', order_view.OrderViewSet, basename='order')\norder_router = routers.NestedDefaultRouter(router, 'order', lookup='order')\norder_router.register('items', order_view.OrderItemViewSet, basename='order-items')\nurlpatterns = [",
         "detail": "api.urls",
         "documentation": {}
     },
@@ -1052,7 +1134,16 @@
         "kind": 5,
         "importPath": "api.urls",
         "description": "api.urls",
-        "peekOfCode": "cart_router = routers.NestedDefaultRouter(router, 'carts', lookup='cart')\ncart_router.register('items', CartItemViewSet, basename='cart-items')\nurlpatterns = [\n    path('admin/', admin.site.urls),\n    path('__debug__/', include('debug_toolbar.urls')),\n    # path('', include('rest_framework.urls')),\n] + router.urls + cart_router.urls",
+        "peekOfCode": "cart_router = routers.NestedDefaultRouter(router, 'carts', lookup='cart')\ncart_router.register('items', CartItemViewSet, basename='cart-items')\nrouter.register('order', order_view.OrderViewSet, basename='order')\norder_router = routers.NestedDefaultRouter(router, 'order', lookup='order')\norder_router.register('items', order_view.OrderItemViewSet, basename='order-items')\nurlpatterns = [\n    path('admin/', admin.site.urls),\n    path('__debug__/', include('debug_toolbar.urls')),\n    # path('', include('rest_framework.urls')),\n] + router.urls + cart_router.urls + order_router.urls",
+        "detail": "api.urls",
+        "documentation": {}
+    },
+    {
+        "label": "order_router",
+        "kind": 5,
+        "importPath": "api.urls",
+        "description": "api.urls",
+        "peekOfCode": "order_router = routers.NestedDefaultRouter(router, 'order', lookup='order')\norder_router.register('items', order_view.OrderItemViewSet, basename='order-items')\nurlpatterns = [\n    path('admin/', admin.site.urls),\n    path('__debug__/', include('debug_toolbar.urls')),\n    # path('', include('rest_framework.urls')),\n] + router.urls + cart_router.urls + order_router.urls",
         "detail": "api.urls",
         "documentation": {}
     },
@@ -1061,7 +1152,7 @@
         "kind": 5,
         "importPath": "api.urls",
         "description": "api.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('__debug__/', include('debug_toolbar.urls')),\n    # path('', include('rest_framework.urls')),\n] + router.urls + cart_router.urls",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('__debug__/', include('debug_toolbar.urls')),\n    # path('', include('rest_framework.urls')),\n] + router.urls + cart_router.urls + order_router.urls",
         "detail": "api.urls",
         "documentation": {}
     },
@@ -1201,6 +1292,15 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "order.migrations.0002_remove_orderitem_cart_item_orderitem_product_and_more",
+        "description": "order.migrations.0002_remove_orderitem_cart_item_orderitem_product_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('shop', '0001_initial'),\n        ('order', '0001_initial'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='orderitem',\n            name='cart_item',\n        ),",
+        "detail": "order.migrations.0002_remove_orderitem_cart_item_orderitem_product_and_more",
+        "documentation": {}
+    },
+    {
         "label": "OrderConfig",
         "kind": 6,
         "importPath": "order.apps",
@@ -1223,8 +1323,44 @@
         "kind": 6,
         "importPath": "order.models",
         "description": "order.models",
-        "peekOfCode": "class OrderItem(models.Model):\n    order = models.ForeignKey(Order, on_delete=models.CASCADE, related_name='order_items')\n    cart_item = models.ForeignKey(CartItem, on_delete=models.PROTECT, related_name='items')\n    def __str__(self):\n        return str(self.order.id)",
+        "peekOfCode": "class OrderItem(models.Model):\n    order = models.ForeignKey(Order, on_delete=models.CASCADE, related_name='order_items')\n    product = models.ForeignKey(Product, on_delete=models.PROTECT, related_name='items')\n    quantity = models.PositiveIntegerField()\n    def __str__(self):\n        return str(self.order.id)",
         "detail": "order.models",
+        "documentation": {}
+    },
+    {
+        "label": "OrderItemSerializer",
+        "kind": 6,
+        "importPath": "order.serializers",
+        "description": "order.serializers",
+        "peekOfCode": "class OrderItemSerializer(serializers.ModelSerializer):\n    product = SimpleProductSerializer(read_only=True)\n    quantity = serializers.IntegerField(read_only=True)\n    total_price = serializers.SerializerMethodField()\n    def get_total_price(self, obj):\n        return obj.product.price * obj.quantity\n    class Meta:\n        model = OrderItem\n        fields = ['product', 'quantity', 'total_price']\nclass OrderSerializer(serializers.ModelSerializer):",
+        "detail": "order.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "OrderSerializer",
+        "kind": 6,
+        "importPath": "order.serializers",
+        "description": "order.serializers",
+        "peekOfCode": "class OrderSerializer(serializers.ModelSerializer):\n    total = serializers.SerializerMethodField()\n    items = serializers.SerializerMethodField()\n    def get_items(self, obj):\n        order_items = OrderItem.objects.filter(order=obj)\n        return OrderItemSerializer(order_items, many=True).data\n    def get_total(self, obj):\n        return sum(item.product.price * item.quantity for item in obj.order_items.all())  # Calculate the total here\n    class Meta:\n        model = Order",
+        "detail": "order.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "OrderViewSet",
+        "kind": 6,
+        "importPath": "order.views",
+        "description": "order.views",
+        "peekOfCode": "class OrderViewSet(ModelViewSet):\n    queryset = Order.objects.all()\n    serializer_class = OrderSerializer\n    permission_classes = [IsAuthenticated]\n    def get_serializer_context(self):\n        return {'user': self.request.user}\nclass OrderItemViewSet(ModelViewSet):\n    queryset = OrderItem.objects.all()\n    serializer_class = OrderItemSerializer\n    permission_classes = [IsAuthenticated]",
+        "detail": "order.views",
+        "documentation": {}
+    },
+    {
+        "label": "OrderItemViewSet",
+        "kind": 6,
+        "importPath": "order.views",
+        "description": "order.views",
+        "peekOfCode": "class OrderItemViewSet(ModelViewSet):\n    queryset = OrderItem.objects.all()\n    serializer_class = OrderItemSerializer\n    permission_classes = [IsAuthenticated]",
+        "detail": "order.views",
         "documentation": {}
     },
     {
@@ -1459,6 +1595,69 @@
         "description": "manage",
         "peekOfCode": "def main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'api.settings')\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"",
         "detail": "manage",
+        "documentation": {}
+    },
+    {
+        "label": "create_chapa_checkout",
+        "kind": 2,
+        "importPath": "mm",
+        "description": "mm",
+        "peekOfCode": "def create_chapa_checkout(data):\n    response = chapa.initialize(**data)\n    if response.status != 'success':\n        return None\n    return response.data\nrandom_tx = \"\".join(random.choices(string.ascii_letters, k=5))\nrandom_email = \"\".join(random.choices(string.ascii_letters, k=5))\nrandom_domain = \"\".join(random.choices(string.ascii_letters, k=5))\ndata = {\n    'email': f\"manmuba90@gmail.com\",",
+        "detail": "mm",
+        "documentation": {}
+    },
+    {
+        "label": "chapa",
+        "kind": 5,
+        "importPath": "mm",
+        "description": "mm",
+        "peekOfCode": "chapa = Chapa('CHASECK_TEST-TzFVOCbant87UxMZ9yMLedianUYNQDi1',\n              response_format='obj')\ndef create_chapa_checkout(data):\n    response = chapa.initialize(**data)\n    if response.status != 'success':\n        return None\n    return response.data\nrandom_tx = \"\".join(random.choices(string.ascii_letters, k=5))\nrandom_email = \"\".join(random.choices(string.ascii_letters, k=5))\nrandom_domain = \"\".join(random.choices(string.ascii_letters, k=5))",
+        "detail": "mm",
+        "documentation": {}
+    },
+    {
+        "label": "random_tx",
+        "kind": 5,
+        "importPath": "mm",
+        "description": "mm",
+        "peekOfCode": "random_tx = \"\".join(random.choices(string.ascii_letters, k=5))\nrandom_email = \"\".join(random.choices(string.ascii_letters, k=5))\nrandom_domain = \"\".join(random.choices(string.ascii_letters, k=5))\ndata = {\n    'email': f\"manmuba90@gmail.com\",\n    'amount': 1000,\n    'tx_ref': random_tx,\n    'first_name': 'Mubarek',\n    'last_name': 'Shikur',\n    'callback_url': f'https://t.me/ski_p3r',",
+        "detail": "mm",
+        "documentation": {}
+    },
+    {
+        "label": "random_email",
+        "kind": 5,
+        "importPath": "mm",
+        "description": "mm",
+        "peekOfCode": "random_email = \"\".join(random.choices(string.ascii_letters, k=5))\nrandom_domain = \"\".join(random.choices(string.ascii_letters, k=5))\ndata = {\n    'email': f\"manmuba90@gmail.com\",\n    'amount': 1000,\n    'tx_ref': random_tx,\n    'first_name': 'Mubarek',\n    'last_name': 'Shikur',\n    'callback_url': f'https://t.me/ski_p3r',\n    'customization': {",
+        "detail": "mm",
+        "documentation": {}
+    },
+    {
+        "label": "random_domain",
+        "kind": 5,
+        "importPath": "mm",
+        "description": "mm",
+        "peekOfCode": "random_domain = \"\".join(random.choices(string.ascii_letters, k=5))\ndata = {\n    'email': f\"manmuba90@gmail.com\",\n    'amount': 1000,\n    'tx_ref': random_tx,\n    'first_name': 'Mubarek',\n    'last_name': 'Shikur',\n    'callback_url': f'https://t.me/ski_p3r',\n    'customization': {\n        'title': 'Amazing Bot',",
+        "detail": "mm",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "mm",
+        "description": "mm",
+        "peekOfCode": "data = {\n    'email': f\"manmuba90@gmail.com\",\n    'amount': 1000,\n    'tx_ref': random_tx,\n    'first_name': 'Mubarek',\n    'last_name': 'Shikur',\n    'callback_url': f'https://t.me/ski_p3r',\n    'customization': {\n        'title': 'Amazing Bot',\n        'description': 'This is a test project for chapa python sdk'",
+        "detail": "mm",
+        "documentation": {}
+    },
+    {
+        "label": "checkout",
+        "kind": 5,
+        "importPath": "mm",
+        "description": "mm",
+        "peekOfCode": "checkout = create_chapa_checkout(data)\nprint(checkout)",
+        "detail": "mm",
         "documentation": {}
     },
     {

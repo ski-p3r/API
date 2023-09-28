@@ -20,7 +20,7 @@ from rest_framework.routers import DefaultRouter
 from rest_framework_nested import routers
 from shop import views
 from cart.views import CartItemViewSet, CartViewSet
-
+from order import views as order_view
 
 
 router = routers.DefaultRouter()
@@ -29,9 +29,12 @@ router.register('categories', views.CategoryViewSet, basename='category')
 router.register('carts', CartViewSet, basename='cart')
 cart_router = routers.NestedDefaultRouter(router, 'carts', lookup='cart')
 cart_router.register('items', CartItemViewSet, basename='cart-items')
+router.register('order', order_view.OrderViewSet, basename='order')
+order_router = routers.NestedDefaultRouter(router, 'order', lookup='order')
+order_router.register('items', order_view.OrderItemViewSet, basename='order-items')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('__debug__/', include('debug_toolbar.urls')),
     # path('', include('rest_framework.urls')),
-] + router.urls + cart_router.urls
+] + router.urls + cart_router.urls + order_router.urls
